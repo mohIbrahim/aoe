@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Glegoo:400,700');
+.navbar{
+	min-height: 120px;
+	border-bottom:  1px solid #3F52A3!important;
+}
+#branding_div{
+	margin-top: 7px;
+	max-width: 120px;
+	position: relative;
+}
+
+.navbar-collapse{
+	margin-top:35px;
+	font-family: 'Russo One', sans-serif;
+	
+}
+@media only screen and (max-width: 990px) {
+    .navbar-collapse{
+    	position: relative;
+    	left:110px;
+    	
+
+    }
+}
+@media only screen and (max-width: 676px) {
+    .navbar-collapse{
+    	
+    	position: relative;
+    	left:0px;
+    	
+    }
+}
+
+
+.nav.navbar-nav li a {
+	color: #3F52A3;
+	font-size: 1em;
+ }
+
+ .navbar-toggle{
+ 	margin-top:30px;
+ 	font-family: 'Russo One', sans-serif;
+ 	color: #3F52A3;
+ }
+
+.navbar-header > button:hover{
+ 	
+ 	background: #F5F8FA!important;
+ }
+ 
