@@ -1,3 +1,7 @@
+<div class="container-fluid language_nav text-right">
+    <a href="#">العربية</a> | 
+    <a href="#">English</a>  
+</div>
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
@@ -67,10 +71,9 @@
                 
                 <div class="hidden-xs hidden-sm hidden-md col-lg-12">
                     <p class="navbar-text">
-                        <a href="#">العربية</a> | 
-                        <a href="#">English</a>                    
-                        <a href="#" class="navbar-link fa fa-facebook" style="font-size: 1.8em; text-decoration: none;margin-right: 15px; color: #3b5998;"></a>
-                        <a href="#" class="navbar-link fa fa-twitter" style="font-size: 1.8em; text-decoration: none;margin-right: 15px; color: #0084b4;"></a>
+                                          
+                        <a href="#" class="navbar-link fa fa-facebook" id="nav-social-facebook" style="font-size: 1.8em; text-decoration: none; color: #3b5998;"></a>
+                        <a href="#" class="navbar-link fa fa-twitter" style="font-size: 1.8em; text-decoration: none; color: #0084b4;"></a>
                         <a href="#" class="navbar-link fa fa-google-plus" style="font-size: 1.8em; text-decoration: none; color: #EA4335;"></a>
                     </p>                    
                 </div>    
