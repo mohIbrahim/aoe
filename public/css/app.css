@@ -8350,6 +8350,28 @@ button.close {
   }
 }
 
+.carousel-control.left {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.0001))) !important;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.0001) 100%) !important;
+}
+
+.carousel-control.right {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.2))) !important;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.2) 100%) !important;
+}
+
+.carousel-indicators {
+  top: 430px;
+}
+
+.carousel-indicators li {
+  border: 1px solid #3E53A4 !important;
+}
+
+.carousel-indicators li.active {
+  background: #ED3038 !important;
+}
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -11420,6 +11442,7 @@ button.close {
 .navbar {
   min-height: 120px;
   border-bottom: 1px solid #3F52A3 !important;
+  margin-bottom: 0;
 }
 
 #branding_div {

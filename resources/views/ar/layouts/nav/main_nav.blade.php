@@ -27,13 +27,13 @@
             <ul class="nav navbar-nav">
                 
                 <li class="active">
-                    <a href="#">Home</a>
+                    <a href="#">الرائيسية</a>
                 </li>
 
                     
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Product Line-up 
+                        المنتاجات 
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
@@ -47,7 +47,7 @@
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Solutions 
+                        الحلول 
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
@@ -57,10 +57,10 @@
 
 
                 <li>
-                    <a href="#">Parts And Maintenance</a>
+                    <a href="#">قطع الغيار و الصيانة</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a href="#">إتصل بنا</a>
                 </li>
                 
             </ul>

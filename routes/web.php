@@ -12,9 +12,18 @@
 */
 
 Route::get('/', function () {
+	
+    if(session()->has('locale') && session('locale') == 'ar')
+    	return view('ar.welcome');
+    
     return view('welcome');
+    	
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/en', 'LanguagesController@switchToEnglish')->name('en');
+Route::get('/ar', 'LanguagesController@switchToArabic')->name('ar');
+
+

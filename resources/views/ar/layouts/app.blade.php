@@ -19,11 +19,11 @@
     @yield('head')
 </head>
 <body>
-    <div id="app">        
-        @include('layouts.nav.main_nav')
-                    
-        @yield('content')
-        
+    <div id="app"> 
+        @include('ar.layouts.nav.main_nav')
+        <div class="container-fluid">
+            @yield('content')
+        </div>
     </div>
 
     <!-- Scripts -->

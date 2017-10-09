@@ -1,0 +1,20 @@
+.carousel-control.left {    
+     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.0001) 100%)!important;     
+}
+
+.carousel-control.right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.2) 100%)!important;
+}
+
+
+.carousel-indicators{
+	top: 430px;
+}
+.carousel-indicators li{
+
+	border: 1px solid #3E53A4!important;
+}
+
+.carousel-indicators li.active{
+	background:  #ED3038!important;
+}
