@@ -1,7 +1,11 @@
-<div class="container-fluid language_nav text-right">
+
+
+<div class="container language_nav text-right">
     <a href="{{ action('LanguagesController@switchToArabic') }}">العربية</a> | 
     <a href="{{ action('LanguagesController@switchToEnglish') }}">English</a>  
 </div>
+
+
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">

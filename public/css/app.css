@@ -8361,7 +8361,7 @@ button.close {
 }
 
 .carousel-indicators {
-  top: 430px;
+  bottom: -40px;
 }
 
 .carousel-indicators li {
@@ -11429,8 +11429,6 @@ button.close {
   display: block;
   position: absolute;
   z-index: 10000;
-  float: right;
-  right: 7%;
 }
 
 .language_nav a {
