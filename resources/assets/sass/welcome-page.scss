@@ -12,9 +12,14 @@
 }
 .carousel-indicators li{
 
-	border: 1px solid #3E53A4!important;
+	border: 1px solid #071444!important;
+}
+
+.carousel-indicators li:hover{
+
+	background:  #647ac9!important;
 }
 
 .carousel-indicators li.active{
-	background:  #ED3038!important;
+	background:  #3E53A4!important;
 }

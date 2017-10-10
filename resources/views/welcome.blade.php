@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
-@section('content')
-    
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+@section('content')    
+{{-- carousel  --}}
+	<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
 
 		<ol class="carousel-indicators" >
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -15,7 +14,7 @@
 
 		<div class="carousel-inner">
 
-			<div class="item active"> <img src="http://via.placeholder.com/1000x300" style="width:100%" alt="First slide">
+			<div class="item active"> <img src="{{ asset('images/welcome-page/3a98ea_fa96ba23431244c69d0142659f857262.png') }}" style="width:100%" alt="First slide">
 				
 			</div>
 
@@ -63,5 +62,27 @@
 		</a>
 
 	</div>
+{{-- End carousel  --}}
+
+	<div class="container">
+		 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		 	<div class="thumbnail">
+		 		<img data-src="#" alt="">
+		 		<div class="caption">
+		 			<h3>Title</h3>
+		 			<p>
+		 				...
+		 			</p>
+		 			<p>
+		 				<a href="#" class="btn btn-primary">Action</a>
+		 				<a href="#" class="btn btn-default">Action</a>
+		 			</p>
+		 		</div>
+		 	</div>
+		 </div>
+	</div>
+
+
+
   
 @endsection

@@ -1,13 +1,13 @@
-
-
-<div class="container language_nav text-right">
-    <a href="{{ action('LanguagesController@switchToArabic') }}">العربية</a> | 
-    <a href="{{ action('LanguagesController@switchToEnglish') }}">English</a>  
+<div class="container" id="language_container">
+    <div class="language_nav text-right">
+        <a href="{{ action('LanguagesController@switchToArabic') }}">العربية</a> | 
+        <a href="{{ action('LanguagesController@switchToEnglish') }}">English</a>        
+    </div>
 </div>
 
 
 <nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
+    <div class="container" >
         <div class="navbar-header">
 
             <!-- Collapsed Hamburger -->
@@ -30,14 +30,14 @@
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
                 
-                <li class="active">
-                    <a href="#">Home</a>
+                <li class="active" >
+                    <a href="#" class="hvr-underline-from-left">Home</a>
                 </li>
 
                     
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Product Line-up 
+                    <a href="#" class="dropdown-toggle hvr-underline-from-left" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Product Lineup 
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
@@ -50,7 +50,7 @@
 
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-toggle hvr-underline-from-left" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         Solutions 
                         <span class="caret"></span>
                     </a>
@@ -61,10 +61,10 @@
 
 
                 <li>
-                    <a href="#">Parts And Maintenance</a>
+                    <a href="#" class="hvr-underline-from-left">Parts And Maintenance</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a href="#" class="hvr-underline-from-left">Contact Us</a>
                 </li>
                 
             </ul>
@@ -74,11 +74,10 @@
                 
                 
                 <div class="hidden-xs hidden-sm hidden-md col-lg-12">
-                    <p class="navbar-text">
-                                          
-                        <a href="#" class="navbar-link fa fa-facebook" id="nav-social-facebook" style="font-size: 1.8em; text-decoration: none; color: #3b5998;"></a>
-                        <a href="#" class="navbar-link fa fa-twitter" style="font-size: 1.8em; text-decoration: none; color: #0084b4;"></a>
-                        <a href="#" class="navbar-link fa fa-google-plus" style="font-size: 1.8em; text-decoration: none; color: #EA4335;"></a>
+                    <p class="navbar-text">                                          
+                        <a href="#" class="navbar-link fa fa-facebook" ></a>
+                        <a href="#" class="navbar-link fa fa-twitter"></a>
+                        <a href="#" class="navbar-link fa fa-google-plus"></a>
                     </p>                    
                 </div>    
                 <!-- Authentication Links -->

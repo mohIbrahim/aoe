@@ -1,86 +1,118 @@
-@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:900');
 @import url('https://fonts.googleapis.com/css?family=El+Messiri');
 
+#language_container{
+    background-color:#fff;
+    padding: 0;
+}
 .language_nav{
+    width:100%;
+    margin:0 auto;
+    padding-right: 25px;
     display: block;
-    position: absolute;
+    position: relative;
     z-index: 10000;
-
 }
-
 .language_nav a{    
-    font-size: 0.9em;
+    font-size: 1em;
     text-decoration: none;
-
     font-family: 'El Messiri', sans-serif;
+    font-weight:bold;
+    color: #3E53A4;
 }
-
+.language_nav a:last-child{    
+    
+    font-family: 'Yantramanav', sans-serif;
+   
+}
 .navbar{
-	min-height: 120px;
-	border-bottom:  1px solid #3F52A3!important;
+	min-height: 95px;
+	border-bottom: 2px solid #3F52A3!important;
     margin-bottom: 0;
 }
-
+.navbar > .container{
+    top:-25px;
+    position: relative;
+}
 #branding_div{
 	margin-top: 7px;
 	max-width: 120px;
 	position: relative;
 }
-
 .navbar-collapse{
 	margin-top:35px;
-	font-family: 'Russo One', sans-serif;
-	
+	font-family: 'Yantramanav', sans-serif;
 }
 @media only screen and (max-width: 990px) {
-    .navbar-collapse{
+    .navbar-collapse > .nav {
     	position: relative;
     	left:110px;
-    	
-
     }
 }
 @media only screen and (max-width: 676px) {
-    .navbar-collapse{
-    	
+    .navbar-collapse{    	
     	position: relative;
-    	left:0px;
-    	
+    	left:0px;    	
     }
 }
-
-
 .nav.navbar-nav li a {
 	color: #3F52A3;
-	font-size: 1em;
- }
-
- .nav.navbar-nav li a:hover {
+	font-size: 1.2em;
+}
+.nav.navbar-nav li a:hover {
     color: #ED3038;
     
- }
-
- .navbar-toggle{
- 	margin-top:30px;
- 	font-family: 'Russo One', sans-serif;
- 	color: #3F52A3;
- }
-
-.navbar-header > button:hover{
- 	
- 	background: #F5F8FA!important;
- }
-
- .navbar-default .navbar-nav > .active > a{
+}
+.navbar-toggle{
+  margin-top:30px;
+  font-family: 'Yantramanav', sans-serif;
+  color: #3F52A3;
+}
+.navbar-header > button:hover{ 	
+  background: #F5F8FA!important;
+}
+.navbar-default .navbar-nav > .active > a{
     background-color: #fff;
     color: #3E53A4;
-    font-size: 1.3em;
+    font-size: 1.2em;
     border-bottom:3px solid #3E53A4;
- }
-
- .navbar-default .navbar-nav > .active > a:hover{
+}
+.navbar-default .navbar-nav > .active > a:hover{
     background-color: #fff;
     color: #ED3038;
     border-bottom:3px solid #ED3038;
- }
- 
+}
+
+.fa-facebook{
+    font-size: 1.8em!important;
+    text-decoration: none!important;
+    color: #3b5998!important;
+}
+
+.fa-twitter{
+    font-size: 1.8em!important;
+    text-decoration: none!important;
+    color: #0084b4!important;
+}
+
+.fa-google-plus{
+    font-size: 1.8em!important;
+    text-decoration: none!important;
+    color: #EA4335!important;
+}
+
+.fa-facebook:hover{
+    color: #507dda!important;
+}
+
+.fa-twitter:hover{
+    color: #4eb9e0!important;
+}
+
+.fa-google-plus:hover{
+    color: #ca1405!important;
+}
+
+.hvr-underline-from-left:before{
+    background-color: #ED3038;
+}

@@ -19,13 +19,9 @@
     @yield('head')
 </head>
 <body>
-    <div id="app">        
-        @include('layouts.nav.main_nav')
-                    
-        @yield('content')
-        
-    </div>
-
+    @include('layouts.nav.main_nav')
+    @yield('content')
+    @include('layouts.footer.footer')
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     @yield('js_footer')
