@@ -60,14 +60,20 @@
 	font-size: 1.2em;
 }
 .nav.navbar-nav li a:hover {
-    color: #ED3038;
-    
+    color: #ED3038;    
 }
 .navbar-toggle{
   margin-top:30px;
   font-family: 'Yantramanav', sans-serif;
   color: #3F52A3;
+  border-color: #3F52A3!important;
 }
+
+.navbar-default .navbar-toggle .icon-bar{
+    margin-top:5px;
+    background: #3F52A3;
+}
+
 .navbar-header > button:hover{ 	
   background: #F5F8FA!important;
 }
