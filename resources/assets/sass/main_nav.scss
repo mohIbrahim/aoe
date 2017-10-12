@@ -49,10 +49,11 @@
     	left:110px;
     }
 }
-@media only screen and (max-width: 676px) {
-    .navbar-collapse{    	
+@media only screen and (max-width: 767px) {
+    .navbar-collapse > .nav{    	
     	position: relative;
-    	left:0px;    	
+    	left:0px;
+        text-align: center;
     }
 }
 .nav.navbar-nav li a {

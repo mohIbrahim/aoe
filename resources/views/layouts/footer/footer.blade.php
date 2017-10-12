@@ -1,6 +1,6 @@
 
 <div id="footer-container" class="container-fluid">
-	<div class="container">
+
 		
 	
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >			
@@ -12,7 +12,7 @@
 				<img src="{{asset('images/branding_image.png')}}" class="img-responsive" alt="Image">
 			</div>
 			
-			<span>
+			<span">
 				<div class="col-xs-8 col-xs-offset-4		col-sm-4 col-sm-offset-0		col-md-3 col-md-offset-0		col-lg-2 col-lg-offset-0">
 					<ul class="footer-nav-ul-1">
 						<li>
@@ -43,12 +43,16 @@
 					</ul>
 				</div>
 
-				<div class="col-xs-8 col-xs-offset-4		col-sm-4 col-sm-offset-5    col-md-3 col-md-offset-0      col-lg-3 col-lg-offset-1" style="border-left: 2px solid #282C72">
+				<div class="col-xs-8 col-xs-offset-4		col-sm-4 col-sm-offset-5    col-md-3 col-md-offset-0      col-lg-2 col-lg-offset-0" style="border-left: 2px solid #282C72">
 					<p class="navbar-text">                                          
 		                <a href="#" class="navbar-link fa fa-facebook" ></a>
 		                <a href="#" class="navbar-link fa fa-twitter"></a>
 		                <a href="#" class="navbar-link fa fa-google-plus"></a>
 		            </p> 
+				</div>
+
+				<div class="col-xs-3		col-sm-3		col-md-3		col-lg-2">
+					<img src="{{ asset('images/footer/MX-2630N.png') }}" class="img-responsive" alt="Image" style="position:absolute;top:-100px;">
 				</div>
 			</span>
 				
@@ -56,5 +60,5 @@
 			
 		</div>
 		
-	</div>
+
 </div>

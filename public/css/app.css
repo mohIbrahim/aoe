@@ -8350,6 +8350,10 @@ button.close {
   }
 }
 
+#myCarousel {
+  margin-bottom: 40px;
+}
+
 .carousel-control.left {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.0001))) !important;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.0001) 100%) !important;
@@ -8373,7 +8377,7 @@ button.close {
 }
 
 .carousel-indicators li.active {
-  background: #3E53A4 !important;
+  background: #282C72 !important;
 }
 
 /*!
@@ -16958,10 +16962,11 @@ button.close {
   }
 }
 
-@media only screen and (max-width: 676px) {
-  .navbar-collapse {
+@media only screen and (max-width: 767px) {
+  .navbar-collapse > .nav {
     position: relative;
     left: 0px;
+    text-align: center;
   }
 }
 
@@ -17041,7 +17046,6 @@ button.close {
   background: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
-  overflow-x: hidden;
   border-top: 2px solid #282C72;
 }
 

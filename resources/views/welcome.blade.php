@@ -2,6 +2,7 @@
 
 @section('content')    
 {{-- carousel  --}}
+	
 	<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
 
 		<ol class="carousel-indicators" >
@@ -62,25 +63,103 @@
 		</a>
 
 	</div>
+		
+	
 {{-- End carousel  --}}
 
 	<div class="container">
-		 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-		 	<div class="thumbnail">
-		 		<img data-src="#" alt="">
-		 		<div class="caption">
-		 			<h3>Title</h3>
-		 			<p>
-		 				...
-		 			</p>
-		 			<p>
-		 				<a href="#" class="btn btn-primary">Action</a>
-		 				<a href="#" class="btn btn-default">Action</a>
-		 			</p>
-		 		</div>
+
+
+		 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+		 	<h3>
+		 		ABOUT US
+		 	</h3>
+		 	<div class="text-justify">
+		 		
+			 	<p>
+			 		Arabian Office Equipments Co is the authorised retailers for all SHARP MFPs in Egypt.
+			 	</p>
+			 	<p>
+			 		AOE is a well established reputable company that has been providing office equipments solutions to the public and private sector since the 70s.
+			 	</p>
+			 	<p>
+			 		Explore our website for products that will help make your office more efficient and easier to connect.
+			 	</p>
 		 	</div>
 		 </div>
+
+
+		 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+		 	<h3>
+		 		OUR VISION
+		 	</h3>
+		 	<div class="text-justify">
+		 		
+			 	<p>
+			 		To stay a market leading company in providing office equipments solutions to the egyptian market.
+			 	</p>
+			 	
+		 	</div>
+		 </div>
+
+
+		 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+		 	<h3>
+		 		SOLUTIONS
+		 	</h3>
+		 	<div class="text-justify">
+		 		<ul>
+		 			<li>
+		 				<p>
+			 				Usability
+			 			</p>
+		 			</li>
+
+		 			<li>
+		 				<p>
+			 				Sharp OSA
+			 			</p>
+		 			</li>
+
+		 			<li>
+		 				<p>
+			 				Eco-Friendliness
+			 			</p>
+		 			</li>
+
+		 			<li>
+		 				<p>
+			 				Device Management
+			 			</p>
+		 			</li>
+
+		 			<li>
+		 				<p>
+			 				Security
+			 			</p>
+		 			</li>
+
+		 			<li>
+		 				<p>
+			 				Document Management
+			 			</p>
+		 			</li>
+
+		 			<li>
+		 				<p>
+			 				Expandability
+			 			</p>
+		 			</li>
+		 		</ul>			 	
+			 	
+		 	</div>
+		 </div>
+
+
+
 	</div>
+
+	
 
 
 
