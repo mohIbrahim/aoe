@@ -70,12 +70,12 @@
 	<div class="container">
 
 
-		 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+		 <div class="col-xs-4 col-sm-4 col-md-12 col-lg-4" style="border:1px solid gray;">
+			<img src="{{asset('images/welcome-page/about_us.png')}}" class="img-responsive" alt="Image"> 
 		 	<h3>
 		 		ABOUT US
 		 	</h3>
 		 	<div class="text-justify">
-		 		
 			 	<p>
 			 		Arabian Office Equipments Co is the authorised retailers for all SHARP MFPs in Egypt.
 			 	</p>
@@ -89,7 +89,8 @@
 		 </div>
 
 
-		 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+		 <div class="col-xs-4 col-sm-4 col-md-12 col-lg-4">
+		 	<img src="{{asset('images/welcome-page/out_vision.png')}}" class="img-responsive" alt="Image"> 
 		 	<h3>
 		 		OUR VISION
 		 	</h3>
