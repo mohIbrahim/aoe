@@ -41,21 +41,21 @@
 </div> --}}
 <div class="container" style="margin-top: 25px">
 	<img src="{{asset('images/welcome-page/3a98ea_fa96ba23431244c69d0142659f857262.png')}}" class="img-responsive" alt="Image" style="margin:0 auto">
-	
+	<button type="button" class="btn btn-primary center-block btn-lg" style="margin-top:40px;font-family: 'Yantramanav', sans-serif;">CONTCT AOE TODAY!</button>
 </div>
 
 
 
 {{-- End carousel  --}}
 
-<div class="container" style="margin-top: 25px; color: #282C72;">
+<div class="container" style="margin-top: 25px; color: #282C72;font-family: 'Yantramanav', sans-serif;">
 
 
 	<div class="row"> 
-		<div class="col-xs-4 col-xs-offset-0		col-sm-4 col-sm-offset-0		col-md-12 col-md-offset-0		col-lg-6 col-lg-offset-0 ">
+		<div class="col-xs-8 col-xs-offset-2		col-sm-8 col-sm-offset-2		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-1 ">
 			<img src="{{asset('images/welcome-page/about_us.png')}}" class="img-responsive" alt="Image"> 
 		</div>
-		<div class="col-xs-8 col-sm-8 col-md-8 col-lg-6">
+		<div class="col-xs-10 col-xs-offset-1		col-sm-12 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-0">
 
 			<h3>
 				ABOUT US
@@ -77,8 +77,11 @@
 
 	<div class="row">
 
-		<div class="col-xs-8 col-xs-offset-0		col-sm-8 col-sm-offset-0		col-md-8 col-md-offset-0		col-lg-6 col-lg-offset-0">
+		<div class="col-xs-10 col-xs-offset-1		hidden-sm		hidden-md		hidden-lg">
+			<img src="{{asset('images/welcome-page/our_vision.png')}}" class="img-responsive" alt="Image"> 
+		</div>
 
+		<div class="col-xs-10 col-xs-offset-1		col-sm-6 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-4 col-lg-offset-1">
 			<h3>
 				OUR VISION
 			</h3>
@@ -90,20 +93,22 @@
 
 			</div>
 		</div>
-		<div class="col-xs-4 col-sm-4 col-md-12 col-lg-6">
+
+		<div class="hidden-xs		col-sm-6 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-1">
 			<img src="{{asset('images/welcome-page/our_vision.png')}}" class="img-responsive" alt="Image"> 
 		</div>
+
 	</div>
 
 
 <hr>
 
 	<div class="row">
-		<div class="col-xs-4 col-xs-offset-0		col-sm-4 col-sm-offset-0		col-md-12 col-md-offset-0		col-lg-6 col-lg-offset-0 ">
+		<div class="col-xs-10 col-xs-offset-1		col-sm-8 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-1 ">
 			<img src="{{asset('images/welcome-page/solutions.png')}}" class="img-responsive" alt="Image"> 
 		</div>
 
-		<div class="col-xs-8 col-sm-8 col-md-8 col-lg-6">
+		<div class="col-xs-8 col-xs-offset-2		col-sm-4 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-0">
 
 			<h3>
 				SOLUTIONS
@@ -151,8 +156,11 @@
 							Expandability
 						</p>
 					</li>
-				</ul>			 	
-
+					<a class="btn btn-primary btn-sm pull-right" href="#" role="button">Learn More.</a>
+				</ul>
+			
+					
+						 	
 			</div>
 		</div>
 	</div>

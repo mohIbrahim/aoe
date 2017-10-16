@@ -37,30 +37,28 @@
 					</ul>
 				</div>
 
-				<div class="col-xs-8 col-xs-offset-2		col-sm-4 col-sm-offset-5    col-md-1 col-md-offset-0      col-lg-1 col-lg-offset-0" style="font-size: 1em;border-left: 1px solid #282C72">
-					<p class="navbar-text">
+				<div class="col-xs-8 col-xs-offset-2		col-sm-4 col-sm-offset-5    col-md-1 col-md-offset-0      col-lg-1 col-lg-offset-0" style="font-size: 1em;border-left: 2px solid #282C72">					
 
-		                <span class="text-center">
-					        <a href="#" class="navbar-link fa fa-facebook" >
-								<span style="font-size: .4em">
-					                Facebook
-					            </span>
-					        </a>
-		                
-		                	<a href="#" class="navbar-link fa fa-twitter">
-		                		<span style="font-size: .4em">
-		                			Twitter
-		                		</span>
-		                	</a>
-		               
-		                	<a href="#" class="navbar-link fa fa-google-plus">
-		                		<span style="font-size: .4em">
-			                		Google Plus
-			                	</span>
-			                </a>
-			            </span>
-
-		            </p> 
+	                <span class="text-center">
+                        <a href="#" class="navbar-link fa fa-facebook"  style="margin-right: 5px">
+                            <span style="font-size: .3em;font-weight:bold">
+                                Facebook
+                            </span>
+                        </a>
+                    
+                        <a href="#" class="navbar-link fa fa-twitter" style="margin-right: 5px">
+                            <span style="font-size: .3em;font-weight:bold">
+                                Twitter
+                            </span>
+                        </a>
+                   
+                        <a href="#" class="navbar-link fa fa-google-plus">
+                            <span style="font-size: .3em;font-weight:bold">
+                                Google Plus
+                            </span>
+                        </a>
+                    </span> 
+		            
 				</div>
 
 				<div class="hidden-xs		hidden-sm		col-md-3		col-lg-3">

@@ -73,12 +73,26 @@
             <ul class="nav navbar-nav navbar-right">
                 
                 
-                <div class="hidden-xs hidden-sm hidden-md col-lg-12">
-                    <p class="navbar-text">                                          
-                        <a href="#" class="navbar-link fa fa-facebook" ></a>
-                        <a href="#" class="navbar-link fa fa-twitter"></a>
-                        <a href="#" class="navbar-link fa fa-google-plus"></a>
-                    </p>                    
+                <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
+                    <span class="text-center">
+                        <a href="#" class="navbar-link fa fa-facebook"  style="margin-right: 5px">
+                            <span style="font-size: .3em;font-weight:bold">
+                                Facebook
+                            </span>
+                        </a>
+                    
+                        <a href="#" class="navbar-link fa fa-twitter" style="margin-right: 5px">
+                            <span style="font-size: .3em;font-weight:bold">
+                                Twitter
+                            </span>
+                        </a>
+                   
+                        <a href="#" class="navbar-link fa fa-google-plus">
+                            <span style="font-size: .3em;font-weight:bold">
+                                Google Plus
+                            </span>
+                        </a>
+                    </span>                    
                 </div>    
                 <!-- Authentication Links -->
                 {{-- @if (Auth::guest())
