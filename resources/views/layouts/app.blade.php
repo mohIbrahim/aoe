@@ -23,6 +23,10 @@
 <body>
     @include('layouts.nav.main_nav')
     @yield('content')
+
+    {{-- Go top Button --}}
+    <button type="button" class="btn btn-primary btn-sm pull-right scrollToTop glyphicon glyphicon-circle-arrow-up"></button>
+    
     @include('layouts.footer.footer')
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>

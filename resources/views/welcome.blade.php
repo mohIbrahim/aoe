@@ -60,7 +60,7 @@
 			<h3>
 				ABOUT US
 			</h3>
-			<div class="text-justify">
+			<div class="">
 				<p>
 					Arabian Office Equipments Co is the authorised retailers for all SHARP MFPs in Egypt.
 				</p>
@@ -85,7 +85,7 @@
 			<h3>
 				OUR VISION
 			</h3>
-			<div class="text-justify">
+			<div class="">
 
 				<p>
 					To stay a market leading company in providing office equipments solutions to the egyptian market.
@@ -113,7 +113,7 @@
 			<h3>
 				SOLUTIONS
 			</h3>
-			<div class="text-justify">
+			<div class="">
 				<ul>
 					<li>
 						<p>

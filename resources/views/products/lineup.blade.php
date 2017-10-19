@@ -1,12 +1,13 @@
 @extends('layouts.app')
 
 @section('title')
-	AOE | Products Lineup
+	AOE | Product Lineup
 @endsection
 @section("head")
 	<style type="text/css">
 		.container{
-			
+			font-family: 'Yantramanav', sans-serif;
+			color: #282C72;
 		}
 
 		.thumbnail{
@@ -28,19 +29,21 @@
 
 		.panel-body{
 			min-height: 350px!important;
-			color: #282C72;font-family: 'Yantramanav', sans-serif;
 		}
 
 		.thumbnail > .btn{
 			border-radius: 0;
 		}
+
+
 	</style>
 @endsection
 @section('content')
 
 	<div class="container">
-		<div class="row">
+		<div class="row text-center">
 			<h2> Product Lineup</h2>
+			<hr>
 		</div>
 		<div class="row">
 

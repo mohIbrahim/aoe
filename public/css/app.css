@@ -17098,3 +17098,15 @@ body {
   background-color: #fff;
 }
 
+.scrollToTop {
+  text-decoration: none;
+  position: fixed;
+  top: 90%;
+  right: 4px;
+  display: none;
+}
+
+.scrollToTop:hover {
+  text-decoration: none;
+}
+
