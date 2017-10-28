@@ -37,11 +37,12 @@
                     
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle hvr-underline-from-left" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Product Lineup 
+                        Products 
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">23 PPM and Up</a></li>
+                        <li><a href="{{action('ProductsController@getProductLineup')}}">Products Lineup</a></li>
+                        <li><a href="{{action('ProductsController@get23Ppm')}}">23 PPM and Up</a></li>
                         <li><a href="#">22 PPM Models</a></li>
                         <li><a href="#">HV Production MFP</a></li>                       
                     </ul>
