@@ -43,8 +43,8 @@
                     <ul class="dropdown-menu">
                         <li><a href="{{action('ProductsController@getProductLineup')}}">Products Lineup</a></li>
                         <li><a href="{{action('ProductsController@get23Ppm')}}">23 PPM and Up</a></li>
-                        <li><a href="#">22 PPM Models</a></li>
-                        <li><a href="#">HV Production MFP</a></li>                       
+                        <li><a href="{{action('ProductsController@get20Ppm')}}">20 PPM Models</a></li>
+                        <li><a href="{{action('ProductsController@getHvProductionMfp')}}">HV Production MFP</a></li>                       
                     </ul>
                 </li>
 

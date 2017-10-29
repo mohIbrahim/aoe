@@ -25,7 +25,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/en', 'LanguagesController@switchToEnglish')->name('en');
 Route::get('/ar', 'LanguagesController@switchToArabic')->name('ar');
+
 Route::get('/products/lineup', 'ProductsController@getProductLineup');
 Route::get('/products/23ppm', 'ProductsController@get23Ppm');
+Route::get('/products/20ppm', 'ProductsController@get20Ppm');
+Route::get('/products/HV_Production_MFP', 'ProductsController@getHvProductionMfp');
 
 
