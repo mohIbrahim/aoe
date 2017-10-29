@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-	AOE | Product Lineup
+	AOE | 23 Pages Per Minute
 @endsection
 @section("head")
 	<style type="text/css">

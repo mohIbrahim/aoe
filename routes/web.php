@@ -31,4 +31,6 @@ Route::get('/products/23ppm', 'ProductsController@get23Ppm');
 Route::get('/products/20ppm', 'ProductsController@get20Ppm');
 Route::get('/products/HV_Production_MFP', 'ProductsController@getHvProductionMfp');
 
+Route::get('solutions', 'SolutionsController@getSolutions');
+
 

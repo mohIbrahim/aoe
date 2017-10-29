@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-	AOE | Product Lineup
+	AOE | HV Production MFP
 @endsection
 @section("head")
 	<style type="text/css">
@@ -28,7 +28,7 @@
 		}
 
 		.panel-body{
-			min-height: 350px!important;
+			min-height: 600px!important;
 		}
 
 		.thumbnail .btn{
@@ -42,7 +42,7 @@
 
 	<div class="container">
 		<div class="row text-center">
-			<h2> HV Production  MFP UP TO  120 PPM</h2>
+			<h2> HV Production MFP UP TO  120 PPM</h2>
 			<hr>
 		</div>
 		<div class="row">
