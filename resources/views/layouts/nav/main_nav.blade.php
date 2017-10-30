@@ -50,19 +50,13 @@
 
 
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle hvr-underline-from-left" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Solutions 
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Office Solutions</a></li>
-                    </ul>
+                <li>
+                    <a href="{{action('SolutionsController@getSolutions')}}" class="hvr-underline-from-left">Solutions</a>
                 </li>
 
 
                 <li>
-                    <a href="#" class="hvr-underline-from-left">Parts And Maintenance</a>
+                    <a href="{{action('PartsAndMaintenanceController@getPartsAndMaintenance')}}" class="hvr-underline-from-left">Parts And Maintenance</a>
                 </li>
                 <li>
                     <a href="#" class="hvr-underline-from-left">Contact Us</a>

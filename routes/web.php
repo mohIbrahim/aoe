@@ -33,4 +33,6 @@ Route::get('/products/HV_Production_MFP', 'ProductsController@getHvProductionMfp
 
 Route::get('solutions', 'SolutionsController@getSolutions');
 
+Route::get('parts_and_maintenance', 'PartsAndMaintenanceController@getPartsAndMaintenance');
+
 
