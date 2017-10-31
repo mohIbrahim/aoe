@@ -11,6 +11,11 @@
 			color: #282C72;
 			text-align: justify;
 		}
+		#solutions-container img{
+			display:block;
+			margin-right:auto;
+			margin-left:auto;
+		}
 		.solution-title-h3{
 			margin-top:10px;
 		}
