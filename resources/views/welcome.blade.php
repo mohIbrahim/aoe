@@ -41,7 +41,11 @@
 </div> --}}
 <div class="container" style="margin-top: 25px">
 	<img src="{{asset('images/welcome-page/3a98ea_fa96ba23431244c69d0142659f857262.png')}}" class="img-responsive" alt="Image" style="margin:0 auto">
-	<button type="button" class="btn btn-primary center-block btn-lg" style="margin-top:40px;font-family: 'Yantramanav', sans-serif;">CONTCT AOE TODAY!</button>
+	
+
+	<a class="btn btn-primary btn-lg center-block" href="{{ action('ContactUsController@getContactUs') }}" role="button" style="margin-top:40px;font-family: 'Yantramanav', sans-serif; max-width: 200px">
+		CONTCT AOE TODAY!
+	</a>
 </div>
 
 

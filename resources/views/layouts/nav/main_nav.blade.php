@@ -1,6 +1,6 @@
 <div class="container" id="language_container">
     <div class="language_nav text-right">
-        <a href="{{ action('LanguagesController@switchToArabic') }}">العربية</a> | 
+        <a href="{{ action('LanguagesController@switchToArabic') }}">العربية</a> |
         <a href="{{ action('LanguagesController@switchToEnglish') }}">English</a>        
     </div>
 </div>
@@ -20,7 +20,7 @@
 
             <!-- Branding Image -->
             <div id="branding_div">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand hvr-hang" href="{{ url('/') }}">
                     <img src="{{ asset('images/branding_image.png') }}" class="img-responsive" alt="Image">
                 </a>
             </div>
@@ -71,58 +71,30 @@
                 </li>
                 
             </ul>
+            <div class=" col-xs-12 col-sm-12 col-md-3 col-lg-4 text-center" style="float:right;margin-top:15px">
+
+                <a href="#" style="font-size: .5em; text-decoration: none;">
+                    <span class="hvr-icon-spin fa-facebook" >
+                        Facebook
+                    </span>
+                </a>
+
+                <a href="#" style="font-size: .5em; text-decoration: none;">
+                    <span class="hvr-icon-spin  fa-twitter">
+                        Twitter
+                    </span>
+                </a>
+
+                <a href="#" style="font-size: .5em; text-decoration: none;">
+                    <span class="hvr-icon-spin fa-google-plus">
+                        Google pluse &nbsp
+                    </span>
+                </a>
+                                   
+            </div>    
 
             <!-- Right Side Of Navbar -->
-            <ul class="nav navbar-nav navbar-right">
-                
-                
-                <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
-                    <span class="text-center">
-                        <a href="#" class="navbar-link fa fa-facebook"  style="margin-right: 5px">
-                            <span style="font-size: .3em;font-weight:bold">
-                                Facebook
-                            </span>
-                        </a>
-                    
-                        <a href="#" class="navbar-link fa fa-twitter" style="margin-right: 5px">
-                            <span style="font-size: .3em;font-weight:bold">
-                                Twitter
-                            </span>
-                        </a>
-                   
-                        <a href="#" class="navbar-link fa fa-google-plus">
-                            <span style="font-size: .3em;font-weight:bold">
-                                Google Plus
-                            </span>
-                        </a>
-                    </span>                    
-                </div>    
-                <!-- Authentication Links -->
-                {{-- @if (Auth::guest())
-                    <li><a href="{{ route('login') }}">Login</a></li>
-                    <li><a href="{{ route('register') }}">Register</a></li>
-                @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::user()->name }} <span class="caret"></span>
-                        </a>
-
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
-                                             document.getElementById('logout-form').submit();">
-                                    Logout
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                        </ul>
-                    </li>
-                @endif --}}
-            </ul>
+           
         </div>
     </div>
 </nav>

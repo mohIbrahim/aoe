@@ -24,7 +24,7 @@
 	@import "resources/assets/sass/footer.scss";
 	
 body{
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
 .scrollToTop{
@@ -37,4 +37,8 @@ body{
 }
 .scrollToTop:hover{
 	text-decoration:none;
+}
+
+.btn{
+	border-radius: 0!important;
 }

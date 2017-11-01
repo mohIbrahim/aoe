@@ -6,19 +6,24 @@
     padding: 0;
 }
 .language_nav{
+    /*border: 1px solid black;*/
     width:100%;
+    top: 5px;
     margin:0 auto;
-    padding-right: 25px;
+    padding-right: 18px;
     display: block;
     position: relative;
     z-index: 10000;
 }
 .language_nav a{    
-    font-size: 1em;
+    font-size: .9em;
     text-decoration: none;
     font-family: 'El Messiri', sans-serif;
     font-weight:bold;
-    color: #3E53A4;
+    color: black;
+}
+.language_nav a:hover{    
+    color: #E51E25;
 }
 .language_nav a:last-child{    
     
@@ -35,27 +40,15 @@
     position: relative;
 }
 #branding_div{
-	margin-top: 7px;
-	max-width: 120px;
+	margin-top: 5px;
+	max-width: 130px;
 	position: relative;
 }
 .navbar-collapse{
 	margin-top:35px;
 	font-family: 'Yantramanav', sans-serif;
 }
-@media only screen and (max-width: 990px) {
-    .navbar-collapse > .nav {
-    	position: relative;
-    	left:110px;
-    }
-}
-@media only screen and (max-width: 767px) {
-    .navbar-collapse > .nav{    	
-    	position: relative;
-    	left:0px;
-        text-align: center;
-    }
-}
+
 .nav.navbar-nav li a {
 	color: #3F52A3;
 	font-size: 1.2em;
@@ -71,7 +64,6 @@
 }
 
 .navbar-default .navbar-toggle .icon-bar{
-    margin-top:5px;
     background: #3F52A3;
 }
 
@@ -89,7 +81,10 @@
     color: #ED3038;
     border-bottom:3px solid #ED3038;
 }
-
+.navbar-right{
+    position: relative;
+    top:10px;
+}
 .fa-facebook{
     font-size: 1.8em!important;
     text-decoration: none!important;
@@ -122,4 +117,22 @@
 
 .hvr-underline-from-left:before{
     background-color: #ED3038;
+}
+.dropdown-menu  a{
+    
+    border-left:2px solid white;
+    color:#282C72!important;
+}
+.dropdown-menu > .active > a{
+    background:#f9f9f9;
+    border-left:2px solid #282C72;
+}
+
+.dropdown-menu  a:hover{
+    
+    border-left:2px solid #282C72;
+}
+
+.dropdown-menu > .active > a:hover{
+    background:#F5F5F5;
 }
