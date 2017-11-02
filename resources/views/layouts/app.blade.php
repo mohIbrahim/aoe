@@ -25,7 +25,7 @@
     @yield('content')
 
     {{-- Go top Button --}}
-    <button type="button" class="btn btn-primary btn-sm pull-right scrollToTop glyphicon glyphicon-circle-arrow-up"></button>
+    <button type="button" class="btn btn-primary btn-sm pull-right scrollToTop glyphicon glyphicon-circle-arrow-up" style="z-index: 10000"></button>
     
     @include('layouts.footer.footer')
     <!-- Scripts -->

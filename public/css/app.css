@@ -8380,6 +8380,10 @@ button.close {
   background: #282C72 !important;
 }
 
+.welcome-page ul li {
+  list-style-type: square;
+}
+
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)
  * Version: 2.2.1
@@ -16924,11 +16928,11 @@ button.close {
 }
 
 .language_nav a {
-  font-size: .9em;
+  font-size: 1em;
   text-decoration: none;
   font-family: 'El Messiri', sans-serif;
   font-weight: bold;
-  color: black;
+  color: #000000;
 }
 
 .language_nav a:hover {
@@ -16987,15 +16991,19 @@ button.close {
 
 .navbar-default .navbar-nav > .active > a {
   background-color: #fff;
-  color: #3E53A4;
+  color: #E51E25;
   font-size: 1.2em;
-  border-bottom: 3px solid #3E53A4;
+  border-bottom: 3px solid #E51E25;
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
   background-color: #fff;
   color: #ED3038;
   border-bottom: 3px solid #ED3038;
+}
+
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ED3038;
 }
 
 .navbar-right {
@@ -17105,6 +17113,27 @@ span {
   #footer-container > div > span > div.col-xs-8.col-xs-offset-2.col-sm-4.col-sm-offset-5.col-md-1.col-md-offset-0.col-lg-1.col-lg-offset-0 {
     border-left: none !important;
   }
+}
+
+footer .active a {
+  background-color: #fff;
+  color: #E51E25 !important;
+  font-size: 1.2em;
+  border-bottom: 1px solid #E51E25;
+}
+
+footer .footer-nav-ul .active {
+  color: #E51E25 !important;
+}
+
+footer .active a:hover {
+  background-color: #fff;
+  color: #ED3038;
+  border-bottom: 1px solid #ED3038;
+}
+
+footer .active a:focus {
+  color: #ED3038;
 }
 
 body {

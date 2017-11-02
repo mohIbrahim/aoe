@@ -54,5 +54,26 @@ span{
 	#footer-container > div > span > div.col-xs-8.col-xs-offset-2.col-sm-4.col-sm-offset-5.col-md-1.col-md-offset-0.col-lg-1.col-lg-offset-0{
 		border-left: none!important;
 	}
-} 
+}
+
+
+
+footer .active  a{
+    background-color: #fff;
+    color: #E51E25!important;
+    font-size: 1.2em;
+    border-bottom:1px solid #E51E25;    
+}
+
+footer .footer-nav-ul .active {   
+    color: #E51E25!important;      
+}
+footer .active  a:hover{
+    background-color: #fff;
+    color: #ED3038;
+    border-bottom:1px solid #ED3038;
+}
+footer .active  a:focus{  
+    color: #ED3038;
+}
 

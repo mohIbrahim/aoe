@@ -42,7 +42,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li class="{{ Request::routeIs('lineup')? "active":"" }}">
-                            <a href="{{action('ProductsController@getProductLineup')}}">Products Lineup</a>
+                            <a href="{{action('ProductsController@getProductLineup')}}">Lineup</a>
                         </li>
                         <li class="{{ Request::routeIs('23ppm')? "active":"" }}">
                             <a href="{{action('ProductsController@get23Ppm')}}">23 PPM and Up</a>
@@ -73,7 +73,7 @@
             </ul>
             <div class=" col-xs-12 col-sm-12 col-md-3 col-lg-4 text-center" style="float:right;margin-top:15px">
 
-                <a href="#" style="font-size: .5em; text-decoration: none;">
+                <a href="https://www.facebook.com/aoeegypt" style="font-size: .5em; text-decoration: none;" target="_blank">
                     <span class="hvr-icon-spin fa-facebook" >
                         Facebook
                     </span>

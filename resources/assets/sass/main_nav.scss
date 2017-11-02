@@ -16,19 +16,17 @@
     z-index: 10000;
 }
 .language_nav a{    
-    font-size: .9em;
+    font-size: 1em;
     text-decoration: none;
     font-family: 'El Messiri', sans-serif;
     font-weight:bold;
-    color: black;
+    color: #000000;
 }
 .language_nav a:hover{    
     color: #E51E25;
 }
 .language_nav a:last-child{    
-    
-    font-family: 'Yantramanav', sans-serif;
-   
+    font-family: 'Yantramanav', sans-serif;   
 }
 .navbar{
 	min-height: 95px;
@@ -48,7 +46,6 @@
 	margin-top:35px;
 	font-family: 'Yantramanav', sans-serif;
 }
-
 .nav.navbar-nav li a {
 	color: #3F52A3;
 	font-size: 1.2em;
@@ -62,24 +59,25 @@
   color: #3F52A3;
   border-color: #3F52A3!important;
 }
-
 .navbar-default .navbar-toggle .icon-bar{
     background: #3F52A3;
 }
-
 .navbar-header > button:hover{ 	
   background: #F5F8FA!important;
 }
 .navbar-default .navbar-nav > .active > a{
     background-color: #fff;
-    color: #3E53A4;
+    color: #E51E25;
     font-size: 1.2em;
-    border-bottom:3px solid #3E53A4;
+    border-bottom:3px solid #E51E25;
 }
 .navbar-default .navbar-nav > .active > a:hover{
     background-color: #fff;
     color: #ED3038;
     border-bottom:3px solid #ED3038;
+}
+.navbar-default .navbar-nav > .active > a:focus{  
+    color: #ED3038;
 }
 .navbar-right{
     position: relative;
@@ -90,27 +88,22 @@
     text-decoration: none!important;
     color: #3b5998!important;
 }
-
 .fa-twitter{
     font-size: 1.8em!important;
     text-decoration: none!important;
     color: #0084b4!important;
 }
-
 .fa-google-plus{
     font-size: 1.8em!important;
     text-decoration: none!important;
     color: #EA4335!important;
 }
-
 .fa-facebook:hover{
     color: #507dda!important;
 }
-
 .fa-twitter:hover{
     color: #4eb9e0!important;
 }
-
 .fa-google-plus:hover{
     color: #ca1405!important;
 }
@@ -118,8 +111,7 @@
 .hvr-underline-from-left:before{
     background-color: #ED3038;
 }
-.dropdown-menu  a{
-    
+.dropdown-menu  a{    
     border-left:2px solid white;
     color:#282C72!important;
 }
@@ -127,12 +119,9 @@
     background:#f9f9f9;
     border-left:2px solid #282C72;
 }
-
-.dropdown-menu  a:hover{
-    
+.dropdown-menu  a:hover{    
     border-left:2px solid #282C72;
 }
-
 .dropdown-menu > .active > a:hover{
     background:#F5F5F5;
 }
