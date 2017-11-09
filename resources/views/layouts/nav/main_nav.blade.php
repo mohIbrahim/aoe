@@ -1,7 +1,7 @@
 <div class="container" id="language_container">
     <div class="language_nav text-right">
         <a href="{{ action('LanguagesController@switchToArabic') }}">العربية</a> |
-        <a href="{{ action('LanguagesController@switchToEnglish') }}">English</a>        
+        <a href="{{ action('LanguagesController@switchToEnglish') }}">English</a>
     </div>
 </div>
 
@@ -29,15 +29,15 @@
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                
+
                 <li class="{{ Request::routeIs('welcome')? " active":"" }}" >
                     <a href="{{url('/')}}" class="hvr-underline-from-left">Home</a>
                 </li>
 
-                    
+
                 <li class="dropdown {{ Request::is('products/*')? "active":"" }}">
                     <a href="#" class="dropdown-toggle hvr-underline-from-left" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Products 
+                        Products
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
@@ -52,9 +52,22 @@
                         </li>
                         <li class="{{ Request::routeIs('HV_Production_MFP')? "active":"" }}">
                             <a href="{{action('ProductsController@getHvProductionMfp')}}">HV Production MFP</a>
-                        </li>                       
+                        </li>
+
+						<li class="{{ Request::routeIs('HV_Production_MFP')? "active":"" }} level-one-trigger">
+                            <a href="#">My Item</a>
+							<div class="level-one-dropdown ">
+								<ul>
+									<li><a href="">item 1</a></li>
+									<li><a href="">item 2</a></li>
+								</ul>
+							</div>
+                        </li>
+
+
                     </ul>
                 </li>
+
 
 
 
@@ -69,7 +82,7 @@
                 <li class="{{ Request::routeIs('contact_us')? "active":"" }}">
                     <a href="{{action('ContactUsController@getContactUs')}}" class="hvr-underline-from-left">Contact Us</a>
                 </li>
-                
+
             </ul>
             <div class=" col-xs-12 col-sm-12 col-md-3 col-lg-4 text-center" style="float:right;margin-top:15px">
 
@@ -90,11 +103,64 @@
                         Google pluse &nbsp
                     </span>
                 </a>
-                                   
-            </div>    
+
+            </div>
 
             <!-- Right Side Of Navbar -->
-           
+
         </div>
     </div>
 </nav>
+
+<style media="screen">
+.level-one-dropdown{
+	width: 100%;
+
+    position: absolute;
+    display: none;
+    left: 99%;
+    top: 135px;//set position
+    z-index: 1000000;
+    border: 1px solid #b9b9b9;
+    background-color: white;
+}
+
+.level-one-dropdown ul{
+	list-style-type: none;
+	padding: 0px;
+}
+
+.level-one-dropdown ul li a {
+	padding: 3px 20px;
+
+	border: 0px;
+	margin:0px;
+
+}
+</style>
+@section('js_footer')
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.level-one-trigger').on('mouseenter',function () {
+			$('.level-one-dropdown').css('display', 'block');
+		});
+
+		$('.level-one-trigger').on('mouseout',function () {
+
+			$('.level-one-dropdown ,.level-one-dropdown ul, .level-one-dropdown ul li, .level-one-dropdown ul li a').on('mouseenter',function () {
+				$('.level-one-dropdown').css('display', 'block');
+			});
+
+
+
+			$('.level-one-dropdown').css('display', 'none');
+		});
+
+
+
+
+	});
+	</script>
+
+@endsection
