@@ -41,6 +41,48 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
+
+                        <li role="presentation" class="dropdown-header dropdown-header-multicolor">
+                            <strong style="color:#e80047">MultiColor </strong>
+                        <li>
+                        <li class="{{ Request::routeIs('Multicolor_2025_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMulticolor2025')}}">20~25 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Multicolor_2630_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMulticolor2630')}}">26~30 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Multicolor_3140_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMulticolor3140')}}">31~40 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Multicolor_50_plus_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMulticolor50Plus')}}">50+ PPM</a>
+                        </li>
+
+
+                        <li role="presentation" class="divider hr-modification"></li>
+
+
+                        <li role="presentation" class="dropdown-header dropdown-header dropdown-header-monochrome">Monochrome</li>
+
+                        <li class="{{ Request::routeIs('Monochrome_2025_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMonochrome2025')}}">20~25 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Monochrome_2630_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMonochrome2630')}}">26~30 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Monochrome_3140_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMonochrome3140')}}">31~40 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Monochrome_50_plus_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMonochrome50Plus')}}">50+ PPM</a>
+                        </li>
+
+
+
+
+                        <li role="presentation" class="divider"></li>
+
+
                         <li class="{{ Request::routeIs('lineup')? "active":"" }}">
                             <a href="{{action('ProductsController@getProductLineup')}}">Lineup</a>
                         </li>
@@ -54,15 +96,7 @@
                             <a href="{{action('ProductsController@getHvProductionMfp')}}">HV Production MFP</a>
                         </li>
 
-						<li class="{{ Request::routeIs('HV_Production_MFP')? "active":"" }} level-one-trigger">
-                            <a href="#">My Item</a>
-							<div class="level-one-dropdown ">
-								<ul>
-									<li><a href="">item 1</a></li>
-									<li><a href="">item 2</a></li>
-								</ul>
-							</div>
-                        </li>
+
 
 
                     </ul>
@@ -111,56 +145,3 @@
         </div>
     </div>
 </nav>
-
-<style media="screen">
-.level-one-dropdown{
-	width: 100%;
-
-    position: absolute;
-    display: none;
-    left: 99%;
-    top: 135px;//set position
-    z-index: 1000000;
-    border: 1px solid #b9b9b9;
-    background-color: white;
-}
-
-.level-one-dropdown ul{
-	list-style-type: none;
-	padding: 0px;
-}
-
-.level-one-dropdown ul li a {
-	padding: 3px 20px;
-
-	border: 0px;
-	margin:0px;
-
-}
-</style>
-@section('js_footer')
-
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$('.level-one-trigger').on('mouseenter',function () {
-			$('.level-one-dropdown').css('display', 'block');
-		});
-
-		$('.level-one-trigger').on('mouseout',function () {
-
-			$('.level-one-dropdown ,.level-one-dropdown ul, .level-one-dropdown ul li, .level-one-dropdown ul li a').on('mouseenter',function () {
-				$('.level-one-dropdown').css('display', 'block');
-			});
-
-
-
-			$('.level-one-dropdown').css('display', 'none');
-		});
-
-
-
-
-	});
-	</script>
-
-@endsection
