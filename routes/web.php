@@ -30,24 +30,20 @@ Auth::routes();
 	Route::get('/products/monochrome/2025ppm', 'ProductsController@getMonochrome2025')->name('Monochrome_2025_PPM');
 	Route::get('/products/monochrome/2630ppm', 'ProductsController@getMonochrome2630')->name('Monochrome_2630_PPM');
 	Route::get('/products/monochrome/3140ppm', 'ProductsController@getMonochrome3140')->name('Monochrome_3140_PPM');
-	Route::get('/products/monochrome/50plus', 'ProductsController@getMonochrome50Plus')->name('Monochrome_50_plus_PPM');
+	Route::get('/products/monochrome/41plus', 'ProductsController@getMonochrome41Plus')->name('Monochrome_41_plus_PPM');
 
-    Route::get('/products/multicolor/2025ppm', 'ProductsController@getMonochrome2025')->name('Multicolor_2025_PPM');
-	Route::get('/products/multicolor/2630ppm', 'ProductsController@getMonochrome2630')->name('Multicolor_2630_PPM');
-	Route::get('/products/multicolor/3140ppm', 'ProductsController@getMonochrome3140')->name('Multicolor_3140_PPM');
-	Route::get('/products/multicolor/50plus', 'ProductsController@getMonochrome50Plus')->name('Multicolor_50_plus_PPM');
+    Route::get('/products/multicolor/2025ppm', 'ProductsController@getMulticolor2025')->name('Multicolor_2025_PPM');
+	Route::get('/products/multicolor/2630ppm', 'ProductsController@getMulticolor2630')->name('Multicolor_2630_PPM');
+	Route::get('/products/multicolor/3140ppm', 'ProductsController@getMulticolor3140')->name('Multicolor_3140_PPM');
+	Route::get('/products/multicolor/41plus', 'ProductsController@getMulticolor41Plus')->name('Multicolor_41_plus_PPM');
 
 	Route::get('/products/lineup', 'ProductsController@getProductLineup')->name('lineup');
-	Route::get('/products/23ppm', 'ProductsController@get23Ppm')->name('23ppm');
-	Route::get('/products/20ppm', 'ProductsController@get20Ppm')->name('20ppm');
 	Route::get('/products/HV_Production_MFP', 'ProductsController@getHvProductionMfp')->name('HV_Production_MFP');
-
-
-
 //Solutions
 	Route::get('solutions', 'SolutionsController@getSolutions')->name('solutions');
 //Parts And Maintenance
-	Route::get('parts_and_maintenance', 'PartsAndMaintenanceController@getPartsAndMaintenance')->name('parts_and_maintenance');
+	Route::get('/parts_and_maintenance', 'PartsAndMaintenanceController@getPartsAndMaintenance')->name('parts_and_maintenance');
+    Route::post('/parts_and_maintenance/take_order', 'PartsAndMaintenanceController@takeOrder')->name('parts_and_maintenance.take_order');
 //Contact Us
 	Route::get('contact_us', 'ContactUsController@getContactUs')->name('contact_us');
 	Route::post('contact_us_sent_email', 'ContactUsController@sendAnEmail');

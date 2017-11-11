@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-	Monochrome 50+ PPM | AOE
+	Monochrome 41+ PPM | AOE
 @endsection
 @section("head")
 	<style type="text/css">
@@ -42,7 +42,7 @@
 
 	<div class="container">
 		<div class="row text-center">
-			<h2> Monochrome 50+ PPM</h2>
+			<h2> Monochrome 41+ PPM</h2>
 			<hr>
 		</div>
 		<div class="row">
@@ -54,7 +54,7 @@
 		                <div class="panel panel-default">
 		                	<div class="panel-body">
 		                		<h4>
-		                			M1204
+		                			MX-M1204 | MX-M1054 | MX-M904
 		                		</h4>
 								High-Volume Performance Power
 								This series can deliver 120, 105, or 90 cpm/ppm of beautiful, high-quality B/W documents.
@@ -77,7 +77,7 @@
 		                	<div class="panel-body" style="min-height: 300px">
 
 		                		<h4>
-		                			M754N | M654N
+		                			MX-M754N | MX-M654N
 		                		</h4>
 
 								The high-performing MX-M754N/M654N boasts everything needed to bring exceptional document workflow at a speed of 75 / 65 ppm.
@@ -100,7 +100,7 @@
 		                <div class="panel panel-default">
 		                	<div class="panel-body" style="min-height: 300px">
 		                		<h4>
-		                			M364N | M464N | M564N
+		                			MX-M464N | MX-M564N
 		                		</h4>
 								Productive Performance
 								Eco Friendliness

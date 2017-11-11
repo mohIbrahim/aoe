@@ -43,7 +43,7 @@
                     <ul class="dropdown-menu">
 
                         <li role="presentation" class="dropdown-header dropdown-header-multicolor">
-                            <strong style="color:#e80047">MultiColor </strong>
+                            <strong style="color:#e80047">Multicolor </strong>
                         <li>
                         <li class="{{ Request::routeIs('Multicolor_2025_PPM')? "active":"" }}">
                             <a href="{{action('ProductsController@getMulticolor2025')}}">20~25 PPM</a>
@@ -54,15 +54,15 @@
                         <li class="{{ Request::routeIs('Multicolor_3140_PPM')? "active":"" }}">
                             <a href="{{action('ProductsController@getMulticolor3140')}}">31~40 PPM</a>
                         </li>
-                        <li class="{{ Request::routeIs('Multicolor_50_plus_PPM')? "active":"" }}">
-                            <a href="{{action('ProductsController@getMulticolor50Plus')}}">50+ PPM</a>
+                        <li class="{{ Request::routeIs('Multicolor_41_plus_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMulticolor41Plus')}}">41+ PPM</a>
                         </li>
 
 
                         <li role="presentation" class="divider hr-modification"></li>
 
 
-                        <li role="presentation" class="dropdown-header dropdown-header dropdown-header-monochrome">Monochrome</li>
+                        <li role="presentation" class="dropdown-header dropdown-header-monochrome">Monochrome</li>
 
                         <li class="{{ Request::routeIs('Monochrome_2025_PPM')? "active":"" }}">
                             <a href="{{action('ProductsController@getMonochrome2025')}}">20~25 PPM</a>
@@ -73,27 +73,19 @@
                         <li class="{{ Request::routeIs('Monochrome_3140_PPM')? "active":"" }}">
                             <a href="{{action('ProductsController@getMonochrome3140')}}">31~40 PPM</a>
                         </li>
-                        <li class="{{ Request::routeIs('Monochrome_50_plus_PPM')? "active":"" }}">
-                            <a href="{{action('ProductsController@getMonochrome50Plus')}}">50+ PPM</a>
+                        <li class="{{ Request::routeIs('Monochrome_41_plus_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMonochrome41Plus')}}">41+ PPM</a>
                         </li>
 
 
 
 
-                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="divider hr-modification"></li>
 
 
-                        <li class="{{ Request::routeIs('lineup')? "active":"" }}">
-                            <a href="{{action('ProductsController@getProductLineup')}}">Lineup</a>
-                        </li>
-                        <li class="{{ Request::routeIs('23ppm')? "active":"" }}">
-                            <a href="{{action('ProductsController@get23Ppm')}}">23 PPM and Up</a>
-                        </li>
-                        <li class="{{ Request::routeIs('20ppm')? "active":"" }}">
-                            <a href="{{action('ProductsController@get20Ppm')}}">20 PPM Models</a>
-                        </li>
-                        <li class="{{ Request::routeIs('HV_Production_MFP')? "active":"" }}">
-                            <a href="{{action('ProductsController@getHvProductionMfp')}}">HV Production MFP</a>
+
+                        <li class="{{ Request::routeIs('HV_Production_MFP')? "active":"" }}" >
+                            <a href="{{action('ProductsController@getHvProductionMfp')}}" id="hv-production">HV Production MFP</a>
                         </li>
 
 

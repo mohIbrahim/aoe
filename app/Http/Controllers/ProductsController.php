@@ -21,9 +21,9 @@ class ProductsController extends Controller
         return view('products.monochrome_3140_ppm');
     }
 
-    public function getMonochrome50Plus()
+    public function getMonochrome41Plus()
     {
-        return view('products.monochrome_50_plus');
+        return view('products.monochrome_41_plus');
     }
 
 
@@ -44,9 +44,9 @@ class ProductsController extends Controller
         return view('products.multicolor_3140_ppm');
     }
 
-    public function getMulticolor50Plus()
+    public function getMulticolor41Plus()
     {
-        return view('products.multicolor_50_plus');
+        return view('products.multicolor_41_plus');
     }
 
 

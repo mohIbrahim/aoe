@@ -84,7 +84,7 @@
 		                <div class="panel panel-default">
 		                	<div class="panel-body" style="min-height: 300px">
 		                		<h4>
-		                			AR-6031N | AR-6026N
+		                			AR-6026N
 		                		</h4>
 								Network-Ready Solution
 								3-in-1 Performance :
@@ -107,7 +107,7 @@
 		                <div class="panel panel-default">
 		                	<div class="panel-body" style="min-height: 300px">
 		                		<h4>
-		                			MX-M354U/N | MX-M314U/N | MX-M264U/N
+		                			MX-M264U/N
 		                		</h4>
 								COPYING & NETWORK PRINTING
 								A3 Colour Network Scanning*​
@@ -131,7 +131,7 @@
 		                <div class="panel panel-default">
 		                	<div class="panel-body" style="min-height: 300px">
 		                		<h4>
-		                			MX-M314NV | MX-M264NV
+		                			MX-M264NV
 		                		</h4>
 								Copy / Network Print / Network color Scan / SharpDesk
 								Fast output of 31 ppm
@@ -153,7 +153,7 @@
 		                <div class="panel panel-default">
 		                	<div class="panel-body" style="min-height: 300px">
 		                		<h4>
-		                			MX-M315N | MX-M265N
+		                			MX-M265N
 		                		</h4>
 								Super-Efficient Output at 31 /26ppm
 								Standard-Equipped RSPF and Duplex Module
