@@ -86,7 +86,7 @@
 				</p>
 			</div>
 		</div>
-		{!! Form::open(['method'=>"POST", 'action'=>'PartsAndMaintenanceController@takeOrder']) !!}
+		{!! Form::open(['method'=>"GET", 'action'=>'PartsAndMaintenanceController@takeOrder']) !!}
 			<div class="row">
 				<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 
@@ -185,8 +185,8 @@
 
 					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-3 ">
 		        		<div class="thumbnail hvr-float" >
-			                <a href="{{asset('images/parts_and_maintenance/pf_roller.png')}}" target="_blank" >
-			                	<img src="{{asset('images/parts_and_maintenance/pf_roller.png')}}" class="img-responsive" alt="...">
+			                <a href="{{asset('images/parts_and_maintenance/pf_roller.jpg')}}" target="_blank" >
+			                	<img src="{{asset('images/parts_and_maintenance/pf_roller.jpg')}}" class="img-responsive" alt="...">
 			                </a>
 			                <div class="panel panel-default">
 			                	<div class="panel-body">
@@ -207,8 +207,8 @@
 
 		        	<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-3">
 		        		<div class="thumbnail hvr-float" >
-			                <a href="{{asset('images/parts_and_maintenance/ps_and_rubber.png')}}" target="_blank" >
-			                	<img src="{{asset('images/parts_and_maintenance/ps_and_rubber.png')}}" class="img-responsive" alt="...">
+			                <a href="{{asset('images/parts_and_maintenance/ps_and_rubber.jpg')}}" target="_blank" >
+			                	<img src="{{asset('images/parts_and_maintenance/ps_and_rubber.jpg')}}" class="img-responsive" alt="...">
 			                </a>
 			                <div class="panel panel-default">
 			                	<div class="panel-body">
@@ -224,13 +224,13 @@
 								{!!Form::checkbox('part_name', 'ps_and_rubber')!!}
 								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
 							</div>
-			            </div>
+			            </div>``
 		        	</div>
 
 		        	<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-3">
 		        		<div class="thumbnail hvr-float" >
-			                <a href="{{asset('images/parts_and_maintenance/gears.png')}}" target="_blank" >
-			                	<img src="{{asset('images/parts_and_maintenance/gears.png')}}" class="img-responsive" alt="...">
+			                <a href="{{asset('images/parts_and_maintenance/gears.jpg')}}" target="_blank" >
+			                	<img src="{{asset('images/parts_and_maintenance/gears.jpg')}}" class="img-responsive" alt="...">
 			                </a>
 			                <div class="panel panel-default">
 			                	<div class="panel-body">
@@ -246,8 +246,8 @@
 
 		        	<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-3">
 		        		<div class="thumbnail hvr-float" >
-			                <a href="{{asset('images/parts_and_maintenance/toner.png')}}" target="_blank" >
-			                	<img src="{{asset('images/parts_and_maintenance/toner.png')}}" class="img-responsive" alt="...">
+			                <a href="{{asset('images/parts_and_maintenance/toner.jpg')}}" target="_blank" >
+			                	<img src="{{asset('images/parts_and_maintenance/toner.jpg')}}" class="img-responsive" alt="...">
 			                </a>
 			                <div class="panel panel-default">
 			                	<div class="panel-body">

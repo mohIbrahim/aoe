@@ -43,7 +43,8 @@ Auth::routes();
 	Route::get('solutions', 'SolutionsController@getSolutions')->name('solutions');
 //Parts And Maintenance
 	Route::get('/parts_and_maintenance', 'PartsAndMaintenanceController@getPartsAndMaintenance')->name('parts_and_maintenance');
-    Route::post('/parts_and_maintenance/take_order', 'PartsAndMaintenanceController@takeOrder')->name('parts_and_maintenance.take_order');
+    Route::get('/parts_and_maintenance/take_order', 'PartsAndMaintenanceController@takeOrder')->name('parts_and_maintenance.take_order');
+	Route::post('/parts_and_maintenance/confirm_the_order', 'PartsAndMaintenanceController@confirmTheOrder')->name('parts_and_maintenance.confirm_the_order');
 //Contact Us
 	Route::get('contact_us', 'ContactUsController@getContactUs')->name('contact_us');
 	Route::post('contact_us_sent_email', 'ContactUsController@sendAnEmail');
