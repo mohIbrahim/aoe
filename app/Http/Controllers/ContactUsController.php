@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use GuzzleHttp\Client;
 class ContactUsController extends Controller
 {
     public function getContactUs()
@@ -14,17 +14,17 @@ class ContactUsController extends Controller
     public function sendAnEmail(Request $request)
     {
     	 $this->validate(
-                            $request 
+                            $request
                             ,
                                 [
-                                    'name'                          =>  'required', 
+                                    'name'                          =>  'required',
                                     'email'                         =>  'required|email',
                                     'message'                       =>  'required',
                                     'g-recaptcha-response'          =>  'required'
                                 ]
                             ,
                                 [
-                                    'g-recaptcha-response.required' =>  'Please verify you are not a robot!' 
+                                    'g-recaptcha-response.required' =>  'Please verify you are not a robot!'
                                 ]
                         );
 
@@ -34,12 +34,12 @@ class ContactUsController extends Controller
         {
 
             $client = new Client();
-            $response = $client->post('https://www.google.com/recaptcha/api/siteverify', 
+            $response = $client->post('https://www.google.com/recaptcha/api/siteverify',
                                         [
                                             'form_params'=>
                                                             ['secret'=>'6LduWjAUAAAAAAeGXOgYZ-HFyzKkexTQ15hypERI',
                                                              'response'=> $token
-                                                            ]                        
+                                                            ]
                                         ]
                                     );
 
@@ -52,7 +52,7 @@ class ContactUsController extends Controller
     	       \Mail::to('j.sameh@infomed-me.com')->send( new ContactUsMail($name, $email, $message));
                 flash()->success('The EMail has been sent!');
                 return redirect()->action('StaticPagesController@getHomePage');
-                
+
             }else
             {
                 flash()->error('Please verify you are not a robot!');

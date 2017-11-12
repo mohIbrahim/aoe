@@ -7,14 +7,14 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    
+
     <title>
         @yield('title')
     </title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
+
     @if(session()->has('locale') && session('locale') == 'ar')
         <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-rtl/bootstrap-rtl.min.css')}}">
     @endif
@@ -22,11 +22,14 @@
 </head>
 <body>
     @include('layouts.nav.main_nav')
+    <div class="container">
+        @include('flash::message')      
+    </div>
     @yield('content')
 
     {{-- Go top Button --}}
     <button type="button" class="btn btn-primary btn-sm pull-right scrollToTop glyphicon glyphicon-circle-arrow-up" style="z-index: 10000"></button>
-    
+
     @include('layouts.footer.footer')
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>

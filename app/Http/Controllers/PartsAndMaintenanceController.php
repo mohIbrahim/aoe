@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use GuzzleHttp\Client;
+use App\Mail\PartsAndMaintenanceEmail;
 
 class PartsAndMaintenanceController extends Controller
 {
@@ -13,20 +15,25 @@ class PartsAndMaintenanceController extends Controller
 
     public function takeOrder(Request $request)
     {
+        $this->validate(
+                            $request,
+                            ['parts_names'=>'required'],
+                            ['parts_names.required'=>'Please select the spare part that you want to make an order of it.']
+                        );
         $partsNames = $request->input('parts_names');
-		
+
         return view('parts_and_maintenance.order_confirmation', compact('partsNames'));
     }
 
+
 	public function confirmTheOrder(Request $request)
 	{
-
-
 		$this->validate(
 						   $request
 						   ,
 							   [
 								   'name'                          =>  'required',
+								   'phone_number'                  =>  'required',
 								   'email'                         =>  'required|email',
 								   'message'                       =>  'required',
 								   'g-recaptcha-response'          =>  'required'
@@ -46,26 +53,31 @@ class PartsAndMaintenanceController extends Controller
 		   $response = $client->post('https://www.google.com/recaptcha/api/siteverify',
 									   [
 										   'form_params'=>
-														   ['secret'=>'6LduWjAUAAAAAAeGXOgYZ-HFyzKkexTQ15hypERI',
+														   ['secret'=>'6LeaXDgUAAAAAEYDY2ZLPp-3Z8O516bHq3TzQeQs',
 															'response'=> $token
 														   ]
 									   ]
 								   );
 
 		   $result = json_decode($response->getBody()->getContents());
-		   if($result->success)
-		   {
-			   $name       = $request->input('name');
-			   $email      = $request->input('email');
-			   $message    = $request->input('message');
-			  \Mail::to('j.sameh@infomed-me.com')->send( new ContactUsMail($name, $email, $message));
-			   flash()->success('The EMail has been sent!');
-			   return redirect()->action('StaticPagesController@getHomePage');
+		   if ($result->success) {
+               $partsNames    = $request->input('parts_names');
+			   $name         = $request->input('name');
+			   $phoneNumber  = $request->input('phone_number');
+			   $email        = $request->input('email');
+			   $message      = $request->input('message');
 
-		   }else
-		   {
+
+			  \Mail::to('j.sameh@infomed-me.com')->send( new PartsAndMaintenanceEmail($partsNames, $name, $phoneNumber, $email, $message));
+			   flash()->success('The EMail has been sent!');
+			   return redirect()->action('PartsAndMaintenanceController@getPartsAndMaintenance');
+
+		   }else {
 			   flash()->error('Please verify you are not a robot!');
-			   return redirect()->action('StaticPagesController@getContactUsPage');
+			   return redirect()
+                        ->back()
+                        ->withErrors(['Please verify you are not a robot!'])
+                        ->withInputs();
 		   }
 	   }else
 	   {

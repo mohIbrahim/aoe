@@ -84,7 +84,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 							<h4>{{$partName}}</h4>
-							{!! Form::hidden('part_name', $partName) !!}
+							{!! Form::hidden('parts_names[]', $partName, null) !!}
 						</div>
 					</div>
 					<hr />
@@ -97,8 +97,8 @@
 					{!! Form::text('name', null, ['class'=>'form-control', 'placeholder'=>'Enter Your Name.']) !!}
 				</div>
 				<div class="form-group">
-					<h3 style="color:red;display:inline">*</h3>{!! Form::label('phone', 'Phone:') !!}
-					{!! Form::text('phone', null, ['class'=>'form-control', 'placeholder'=>'Enter Your Phone Number.']) !!}
+					<h3 style="color:red;display:inline">*</h3>{!! Form::label('phone_number', 'Phone:') !!}
+					{!! Form::text('phone_number', null, ['class'=>'form-control', 'placeholder'=>'Enter Your Phone Number.']) !!}
 				</div>
 				<div class="form-group">
 					<h3 style="color:red;display:inline">*</h3>{{ Form::label('email', 'E-Mail')}}
@@ -121,7 +121,7 @@
 					{!! Form::textarea('message', null, ['class'=>'form-control', 'placeholder'=>'']) !!}
 				</div>
 				<div class="form-group">
-					<div class="g-recaptcha" data-sitekey="6LdImzYUAAAAAGPkZhFjkf30ZwWEfPMbP8h_fgVI"></div>
+					<div class="g-recaptcha" data-sitekey="6LeaXDgUAAAAAEQl5W6RcxmBCHRZ9B_mBPRSA90B"></div>
 				</div>
 				{!! Form::submit('Send Your Request', ['class'=>'btn btn-primary']) !!}
 
