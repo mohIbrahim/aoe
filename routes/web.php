@@ -11,14 +11,9 @@
 |
 */
 
-Route::get('/', function () {
 
-    if(session()->has('locale') && session('locale') == 'ar')
-    	return view('ar.welcome');
 
-    return view('welcome');
-
-})->name('welcome');
+Route::get('/', 'WelcomeController@getWelcome')->name('welcome');
 
 Auth::routes();
 //Home Login

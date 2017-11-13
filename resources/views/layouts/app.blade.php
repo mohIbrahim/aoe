@@ -14,16 +14,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-    @if(session()->has('locale') && session('locale') == 'ar')
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-rtl/bootstrap-rtl.min.css')}}">
-    @endif
     @yield('head')
 </head>
 <body>
     @include('layouts.nav.main_nav')
     <div class="container">
-        @include('flash::message')      
+        @include('flash::message')
     </div>
     @yield('content')
 

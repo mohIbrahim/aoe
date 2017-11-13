@@ -20,7 +20,7 @@
 
             <!-- Branding Image -->
             <div id="branding_div">
-                <a class="navbar-brand hvr-hang" href="{{ url('/') }}">
+                <a class="navbar-brand hvr-hang" href="{{ action('WelcomeController@getWelcome') }}">
                     <img src="{{ asset('images/branding_image.png') }}" class="img-responsive" alt="Image">
                 </a>
             </div>
@@ -31,7 +31,7 @@
             <ul class="nav navbar-nav">
 
                 <li class="{{ Request::routeIs('welcome')? " active":"" }}" >
-                    <a href="{{url('/')}}" class="hvr-underline-from-left">Home</a>
+                    <a href="{{action('WelcomeController@getWelcome')}}" class="hvr-underline-from-left">Home</a>
                 </li>
 
 

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:900');
+@import url('https://fonts.googleapis.com/css?family=El+Messiri');
+
+#language_container{
+    background-color:#fff;
+    padding: 0;
+
+}
+.language_nav{
+    /*border: 1px solid black;*/
+    width:100%;
+    top: 5px;
+    margin:0 auto;
+    padding-left: 18px;
+    display: block;
+    position: relative;
+    z-index: 10000;
+
+}
+.language_nav a{
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'El Messiri', sans-serif;
+    font-weight:bold;
+    color: #000000;
+}
+.language_nav a:hover{
+    color: #E51E25;
+}
+.language_nav a:last-child{
+    font-family: 'Yantramanav', sans-serif;
+}
+.navbar{
+	min-height: 95px;
+	border-bottom: 2px solid #3F52A3!important;
+    margin-bottom: 0;
+}
+.navbar > .container{
+    top:-25px;
+    position: relative;
+}
+#branding_div{
+	margin-top: 5px;
+	max-width: 130px;
+	position: relative;
+}
+.navbar-collapse{
+	margin-top:35px;
+	font-family: 'Yantramanav', sans-serif;
+}
+.nav.navbar-nav li a {
+	color: #3F52A3;
+	font-size: 1.2em;
+}
+.nav.navbar-nav li a:hover {
+    color: #ED3038;
+}
+.navbar-toggle{
+  margin-top:30px;
+  font-family: 'Yantramanav', sans-serif;
+  color: #3F52A3;
+  border-color: #3F52A3!important;
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background: #3F52A3;
+}
+.navbar-header > button:hover{
+  background: #F5F8FA!important;
+}
+.navbar-default .navbar-nav > .active > a{
+    background-color: #fff;
+    color: #E51E25;
+    font-size: 1.2em;
+    border-bottom:3px solid #E51E25;
+}
+.navbar-default .navbar-nav > .active > a:hover{
+    background-color: #fff;
+    color: #ED3038;
+    border-bottom:3px solid #ED3038;
+}
+.navbar-default .navbar-nav > .active > a:focus{
+    color: #ED3038;
+}
+.navbar-right{
+    position: relative;
+    top:10px;
+}
+.fa-facebook{
+    font-size: 1.8em!important;
+    text-decoration: none!important;
+    color: #3b5998!important;
+}
+.fa-twitter{
+    font-size: 1.8em!important;
+    text-decoration: none!important;
+    color: #0084b4!important;
+}
+.fa-google-plus{
+    font-size: 1.8em!important;
+    text-decoration: none!important;
+    color: #EA4335!important;
+}
+.fa-facebook:hover{
+    color: #507dda!important;
+}
+.fa-twitter:hover{
+    color: #4eb9e0!important;
+}
+.fa-google-plus:hover{
+    color: #ca1405!important;
+}
+
+.hvr-underline-from-left:before{
+    background-color: #ED3038;
+}
+.dropdown-header-monochrome{
+    font-size: 1.2em;
+    border-bottom: 2px solid #282C72;
+    padding: 0px;
+    padding-left: 10px;
+    color: #282C72;
+    background: #f4f5ff;
+}
+.dropdown-header-multicolor{
+    font-size: 1.2em;
+    border-bottom: 2px solid transparent;
+    border-image: url('/images/footer/footer-multi-color-decoration.png') 2 stretch;
+    padding: 0px;
+    padding-left: 10px;
+    color:#282C72;
+    background: #fff3f3;
+}
+.dropdown-menu{
+    padding-top:0px;
+}
+.dropdown-menu  a{
+    font-size: .9em!important;
+    border-left:2px solid white;
+    color:#282C72!important;
+    padding-left: 15px!important;
+    line-height: 150%!important;
+}
+.dropdown-menu > .active > a{
+    background:#ffffff;
+    border-top:1px dashed #bec3f7;
+    border-bottom:1px dashed #bec3f7;
+    border-left:5px solid #282C72;
+    font-weight:bolder
+}
+.dropdown-menu  a:hover{
+    border-left:4px solid #282C72;
+}
+.dropdown-menu > .active > a:hover{
+    background:#F5F5F5;
+}
+.hr-modification{
+    margin-bottom: 0px!important;
+}
+#hv-production{
+    font-size: 1.1em!important;
+    padding-left: 10px!important;
+}

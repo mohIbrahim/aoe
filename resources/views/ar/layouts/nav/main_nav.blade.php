@@ -1,9 +1,13 @@
-<div class="container-fluid language_nav text-right">
-    <a href="{{ action('LanguagesController@switchToArabic') }}">العربية</a> | 
-    <a href="{{ action('LanguagesController@switchToEnglish') }}">English</a>  
+<div class="container" id="language_container">
+    <div class="language_nav text-left">
+        <a href="{{ action('LanguagesController@switchToArabic') }}">العربية</a> |
+        <a href="{{ action('LanguagesController@switchToEnglish') }}">English</a>
+    </div>
 </div>
+
+
 <nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
+    <div class="container" >
         <div class="navbar-header">
 
             <!-- Collapsed Hamburger -->
@@ -16,7 +20,7 @@
 
             <!-- Branding Image -->
             <div id="branding_div">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand hvr-hang" href="{{ action('WelcomeController@getWelcome') }}">
                     <img src="{{ asset('images/branding_image.png') }}" class="img-responsive" alt="Image">
                 </a>
             </div>
@@ -25,84 +29,111 @@
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                
-                <li class="active">
-                    <a href="#">الرائيسية</a>
+
+                <li class="{{ Request::routeIs('welcome')? " active":"" }}" >
+                    <a href="{{action('WelcomeController@getWelcome')}}" class="hvr-underline-from-left">Home</a>
                 </li>
 
-                    
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        المنتاجات 
+
+                <li class="dropdown {{ Request::is('products/*')? "active":"" }}">
+                    <a href="#" class="dropdown-toggle hvr-underline-from-left" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Products
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">23 PPM and Up</a></li>
-                        <li><a href="#">22 PPM Models</a></li>
-                        <li><a href="#">HV Production MFP</a></li>                       
+
+                        <li role="presentation" class="dropdown-header dropdown-header-multicolor">
+                            <strong style="color:#e80047">Multicolor </strong>
+                        <li>
+                        <li class="{{ Request::routeIs('Multicolor_2025_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMulticolor2025')}}">20~25 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Multicolor_2630_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMulticolor2630')}}">26~30 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Multicolor_3140_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMulticolor3140')}}">31~40 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Multicolor_41_plus_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMulticolor41Plus')}}">41+ PPM</a>
+                        </li>
+
+
+                        <li role="presentation" class="divider hr-modification"></li>
+
+
+                        <li role="presentation" class="dropdown-header dropdown-header-monochrome">Monochrome</li>
+
+                        <li class="{{ Request::routeIs('Monochrome_2025_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMonochrome2025')}}">20~25 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Monochrome_2630_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMonochrome2630')}}">26~30 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Monochrome_3140_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMonochrome3140')}}">31~40 PPM</a>
+                        </li>
+                        <li class="{{ Request::routeIs('Monochrome_41_plus_PPM')? "active":"" }}">
+                            <a href="{{action('ProductsController@getMonochrome41Plus')}}">41+ PPM</a>
+                        </li>
+
+
+
+
+                        <li role="presentation" class="divider hr-modification"></li>
+
+
+
+                        <li class="{{ Request::routeIs('HV_Production_MFP')? "active":"" }}" >
+                            <a href="{{action('ProductsController@getHvProductionMfp')}}" id="hv-production">HV Production MFP</a>
+                        </li>
+
+
+
+
                     </ul>
                 </li>
 
 
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        الحلول 
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Office Solutions</a></li>
-                    </ul>
+
+                <li class="{{ Request::routeIs('solutions')? "active":"" }}">
+                    <a href="{{action('SolutionsController@getSolutions')}}" class="hvr-underline-from-left">Solutions</a>
                 </li>
 
 
-                <li>
-                    <a href="#">قطع الغيار و الصيانة</a>
+                <li class="{{ Request::routeIs('parts_and_maintenance')? "active":"" }}">
+                    <a href="{{action('PartsAndMaintenanceController@getPartsAndMaintenance')}}" class="hvr-underline-from-left">Parts And Maintenance</a>
                 </li>
-                <li>
-                    <a href="#">إتصل بنا</a>
+                <li class="{{ Request::routeIs('contact_us')? "active":"" }}">
+                    <a href="{{action('ContactUsController@getContactUs')}}" class="hvr-underline-from-left">Contact Us</a>
                 </li>
-                
+
             </ul>
+            <div class=" col-xs-12 col-sm-12 col-md-3 col-lg-4 text-center" style="float:right;margin-top:15px">
+
+                <a href="https://www.facebook.com/aoeegypt" style="font-size: .5em; text-decoration: none;" target="_blank">
+                    <span class="hvr-icon-spin fa-facebook" >
+                        Facebook
+                    </span>
+                </a>
+
+                <a href="#" style="font-size: .5em; text-decoration: none;">
+                    <span class="hvr-icon-spin  fa-twitter">
+                        Twitter
+                    </span>
+                </a>
+
+                <a href="#" style="font-size: .5em; text-decoration: none;">
+                    <span class="hvr-icon-spin fa-google-plus">
+                        Google pluse &nbsp
+                    </span>
+                </a>
+
+            </div>
 
             <!-- Right Side Of Navbar -->
-            <ul class="nav navbar-nav navbar-right">
-                
-                
-                <div class="hidden-xs hidden-sm hidden-md col-lg-12">
-                    <p class="navbar-text">
-                                          
-                        <a href="#" class="navbar-link fa fa-facebook" id="nav-social-facebook" style="font-size: 1.8em; text-decoration: none; color: #3b5998;"></a>
-                        <a href="#" class="navbar-link fa fa-twitter" style="font-size: 1.8em; text-decoration: none; color: #0084b4;"></a>
-                        <a href="#" class="navbar-link fa fa-google-plus" style="font-size: 1.8em; text-decoration: none; color: #EA4335;"></a>
-                    </p>                    
-                </div>    
-                <!-- Authentication Links -->
-                {{-- @if (Auth::guest())
-                    <li><a href="{{ route('login') }}">Login</a></li>
-                    <li><a href="{{ route('register') }}">Register</a></li>
-                @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::user()->name }} <span class="caret"></span>
-                        </a>
 
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
-                                             document.getElementById('logout-form').submit();">
-                                    Logout
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                        </ul>
-                    </li>
-                @endif --}}
-            </ul>
         </div>
     </div>
 </nav>
