@@ -12,7 +12,7 @@
 
             <!-- Collapsed Hamburger -->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                <span class="sr-only">Toggle Navigation</span>Menu
+                <span class="sr-only">Toggle Navigation</span> القائمة
                 <span class="icon-bar center-block"></span>
                 <span class="icon-bar "></span>
                 <span class="icon-bar center-block"></span>
@@ -31,50 +31,50 @@
             <ul class="nav navbar-nav">
 
                 <li class="{{ Request::routeIs('welcome')? " active":"" }}" >
-                    <a href="{{action('WelcomeController@getWelcome')}}" class="hvr-underline-from-left">Home</a>
+                    <a href="{{action('WelcomeController@getWelcome')}}" class="hvr-underline-from-left"> الرئيسية </a>
                 </li>
 
 
                 <li class="dropdown {{ Request::is('products/*')? "active":"" }}">
                     <a href="#" class="dropdown-toggle hvr-underline-from-left" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Products
+                         المنتجات
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
 
                         <li role="presentation" class="dropdown-header dropdown-header-multicolor">
-                            <strong style="color:#e80047">Multicolor </strong>
+                            <strong style="color:#e80047"> طابعات متعددة الألوان </strong>
                         <li>
                         <li class="{{ Request::routeIs('Multicolor_2025_PPM')? "active":"" }}">
-                            <a href="{{action('ProductsController@getMulticolor2025')}}">20~25 PPM</a>
+                            <a href="{{action('ProductsController@getMulticolor2025')}}">20~25  ورقة بالدقيقة </a>
                         </li>
                         <li class="{{ Request::routeIs('Multicolor_2630_PPM')? "active":"" }}">
-                            <a href="{{action('ProductsController@getMulticolor2630')}}">26~30 PPM</a>
+                            <a href="{{action('ProductsController@getMulticolor2630')}}">26~30  ورقة بالدقيقة </a>
                         </li>
                         <li class="{{ Request::routeIs('Multicolor_3140_PPM')? "active":"" }}">
-                            <a href="{{action('ProductsController@getMulticolor3140')}}">31~40 PPM</a>
+                            <a href="{{action('ProductsController@getMulticolor3140')}}">31~40  ورقة بالدقيقة </a>
                         </li>
                         <li class="{{ Request::routeIs('Multicolor_41_plus_PPM')? "active":"" }}">
-                            <a href="{{action('ProductsController@getMulticolor41Plus')}}">41+ PPM</a>
+                            <a href="{{action('ProductsController@getMulticolor41Plus')}}">41+  ورقة بالدقيقة </a>
                         </li>
 
 
                         <li role="presentation" class="divider hr-modification"></li>
 
 
-                        <li role="presentation" class="dropdown-header dropdown-header-monochrome">Monochrome</li>
+                        <li role="presentation" class="dropdown-header dropdown-header-monochrome"> طابعات أحادية اللون </li>
 
                         <li class="{{ Request::routeIs('Monochrome_2025_PPM')? "active":"" }}">
-                            <a href="{{action('ProductsController@getMonochrome2025')}}">20~25 PPM</a>
+                            <a href="{{action('ProductsController@getMonochrome2025')}}">20~25 ورقة بالدقيقة </a>
                         </li>
                         <li class="{{ Request::routeIs('Monochrome_2630_PPM')? "active":"" }}">
-                            <a href="{{action('ProductsController@getMonochrome2630')}}">26~30 PPM</a>
+                            <a href="{{action('ProductsController@getMonochrome2630')}}">26~30 ورقة بالدقيقة </a>
                         </li>
                         <li class="{{ Request::routeIs('Monochrome_3140_PPM')? "active":"" }}">
-                            <a href="{{action('ProductsController@getMonochrome3140')}}">31~40 PPM</a>
+                            <a href="{{action('ProductsController@getMonochrome3140')}}">31~40 ورقة بالدقيقة </a>
                         </li>
                         <li class="{{ Request::routeIs('Monochrome_41_plus_PPM')? "active":"" }}">
-                            <a href="{{action('ProductsController@getMonochrome41Plus')}}">41+ PPM</a>
+                            <a href="{{action('ProductsController@getMonochrome41Plus')}}">41+ ورقة بالدقيقة </a>
                         </li>
 
 
@@ -85,7 +85,8 @@
 
 
                         <li class="{{ Request::routeIs('HV_Production_MFP')? "active":"" }}" >
-                            <a href="{{action('ProductsController@getHvProductionMfp')}}" id="hv-production">HV Production MFP</a>
+                            <a href="{{action('ProductsController@getHvProductionMfp')}}" id="hv-production">طابعات متعددة الوظائف<br>
+ ذو حجم إنتاج مرتفع</a>
                         </li>
 
 
@@ -98,15 +99,15 @@
 
 
                 <li class="{{ Request::routeIs('solutions')? "active":"" }}">
-                    <a href="{{action('SolutionsController@getSolutions')}}" class="hvr-underline-from-left">Solutions</a>
+                    <a href="{{action('SolutionsController@getSolutions')}}" class="hvr-underline-from-left"> الحلول المكتبية </a>
                 </li>
 
 
                 <li class="{{ Request::routeIs('parts_and_maintenance')? "active":"" }}">
-                    <a href="{{action('PartsAndMaintenanceController@getPartsAndMaintenance')}}" class="hvr-underline-from-left">Parts And Maintenance</a>
+                    <a href="{{action('PartsAndMaintenanceController@getPartsAndMaintenance')}}" class="hvr-underline-from-left"> قطع الغيار والصيانة </a>
                 </li>
                 <li class="{{ Request::routeIs('contact_us')? "active":"" }}">
-                    <a href="{{action('ContactUsController@getContactUs')}}" class="hvr-underline-from-left">Contact Us</a>
+                    <a href="{{action('ContactUsController@getContactUs')}}" class="hvr-underline-from-left"> إتصل بنا </a>
                 </li>
 
             </ul>
@@ -126,7 +127,7 @@
 
                 <a href="#" style="font-size: .5em; text-decoration: none;">
                     <span class="hvr-icon-spin fa-google-plus">
-                        Google pluse &nbsp
+                        &nbsp Google pluse
                     </span>
                 </a>
 

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Yantramanav:900);@import url(https://fonts.googleapis.com/css?family=El+Messiri);#language_container {
+@import url(https://fonts.googleapis.com/css?family=Changa);#language_container {
   background-color: #fff;
   padding: 0;
 }
@@ -17,7 +17,7 @@
 .language_nav a {
   font-size: 1em;
   text-decoration: none;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Changa', sans-serif;
   font-weight: bold;
   color: #000000;
 }
@@ -27,7 +27,7 @@
 }
 
 .language_nav a:last-child {
-  font-family: 'Yantramanav', sans-serif;
+  font-family: 'Changa', sans-serif;
 }
 
 .navbar {
@@ -49,7 +49,7 @@
 
 .navbar-collapse {
   margin-top: 35px;
-  font-family: 'Yantramanav', sans-serif;
+  font-family: 'Changa', sans-serif;
 }
 
 .nav.navbar-nav li a {
@@ -63,7 +63,7 @@
 
 .navbar-toggle {
   margin-top: 30px;
-  font-family: 'Yantramanav', sans-serif;
+  font-family: 'Changa', sans-serif;
   color: #3F52A3;
   border-color: #3F52A3 !important;
 }
@@ -136,7 +136,7 @@
   font-size: 1.2em;
   border-bottom: 2px solid #282C72;
   padding: 0px;
-  padding-left: 10px;
+  padding-right: 10px;
   color: #282C72;
   background: #f4f5ff;
 }
@@ -147,7 +147,7 @@
   -o-border-image: url("/images/footer/footer-multi-color-decoration.png") 2 stretch;
      border-image: url("/images/footer/footer-multi-color-decoration.png") 2 stretch;
   padding: 0px;
-  padding-left: 10px;
+  padding-right: 10px;
   color: #282C72;
   background: #fff3f3;
 }
@@ -158,9 +158,9 @@
 
 .dropdown-menu a {
   font-size: 0.9em !important;
-  border-left: 2px solid white;
+  border-right: 2px solid white;
   color: #282C72 !important;
-  padding-left: 15px !important;
+  padding-right: 15px !important;
   line-height: 150% !important;
 }
 
@@ -168,12 +168,14 @@
   background: #ffffff;
   border-top: 1px dashed #bec3f7;
   border-bottom: 1px dashed #bec3f7;
-  border-left: 5px solid #282C72;
+  border-right: 5px solid #282C72;
+  border-left: none;
   font-weight: bolder;
 }
 
 .dropdown-menu a:hover {
-  border-left: 4px solid #282C72;
+  border-right: 4px solid #282C72;
+  border-left: none;
 }
 
 .dropdown-menu > .active > a:hover {
@@ -186,7 +188,7 @@
 
 #hv-production {
   font-size: 1.1em !important;
-  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 
 #footer-container {
