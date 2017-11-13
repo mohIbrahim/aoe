@@ -19,6 +19,7 @@ class ContactUsController extends Controller
                                 [
                                     'name'                          =>  'required',
                                     'email'                         =>  'required|email',
+                                    'branch'                        =>  'required',
                                     'message'                       =>  'required',
                                     'g-recaptcha-response'          =>  'required'
                                 ]

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-
+	Confirm Your Request | AOE
 @endsection
 
 @section('head')
@@ -54,11 +54,14 @@
 @endsection
 @section('content')
 	<div class="container" id="parts_and_maintenance_container">
-		<div class="col-md-6 col-md-offset-4">
-			<h1> Confirm your request!</h1>
+		<div class="row">
+			<div class="col-xs-6 col-xs-offset-4 col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4 col-lg-6 col-lg-offset-4">
+				<h1> Confirm Your Request</h1>
+			</div>
 		</div>
+		<hr />
 		{!! Form::open(['method'=>'POST', 'action'=>'PartsAndMaintenanceController@confirmTheOrder']) !!}
-			<div class="row">
+		<div class="row">
 			<div class="col-lg-8">
 				<div class="row">
 					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
@@ -67,7 +70,7 @@
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h3>Part Image</h3>
 					</div>
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
 						<h3>Part Name</h3>
 					</div>
 
@@ -80,11 +83,12 @@
 							<h4>{{$key+1}}</h4>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-							<img src="{{asset('images/parts_and_maintenance/'.$partName.'.jpg')}}" alt="" class="img-responsive" style="max-width: 150px">
+							<img src="{{asset('images/parts_and_maintenance/'.$partName.'.jpg')}}" alt="" class="img-responsive" >
 						</div>
-						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
 							<h4>{{$partName}}</h4>
-							{!! Form::hidden('parts_names[]', $partName, null) !!}
+							<input type="hidden" name="parts_names[]" value="{{$partName}}" />
+
 						</div>
 					</div>
 					<hr />
@@ -117,8 +121,12 @@
 					{!! Form::text('area', null, ['class'=>'form-control', 'placeholder'=>'Enter The Area.']) !!}
 				</div>
 				<div class="form-group">
+					<h3 style="color:red;display:inline">*</h3>{!! Form::label('model_code', ' Model Code:') !!}
+					{!! Form::text('model_code', null, ['class'=>'form-control', 'placeholder'=>'Enter The Model Code.']) !!}
+				</div>
+				<div class="form-group">
 					<h3 style="color:red;display:inline">*</h3>{!! Form::label('message', 'Your Message:') !!}
-					{!! Form::textarea('message', null, ['class'=>'form-control', 'placeholder'=>'']) !!}
+					{!! Form::textarea('message', null, ['class'=>'form-control', 'placeholder'=>'Enter Your Message']) !!}
 				</div>
 				<div class="form-group">
 					<div class="g-recaptcha" data-sitekey="6LeaXDgUAAAAAEQl5W6RcxmBCHRZ9B_mBPRSA90B"></div>

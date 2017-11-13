@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\PartsAndMaintenanceRequest;
 use GuzzleHttp\Client;
 use App\Mail\PartsAndMaintenanceEmail;
 
@@ -26,52 +27,15 @@ class PartsAndMaintenanceController extends Controller
     }
 
 
-	public function confirmTheOrder(Request $request)
+	public function confirmTheOrder(PartsAndMaintenanceRequest $request)
 	{
-		$this->validate(
-						   $request
-						   ,
-							   [
-								   'name'                          =>  'required',
-								   'phone_number'                  =>  'required',
-								   'email'                         =>  'required|email',
-								   'message'                       =>  'required',
-								   'g-recaptcha-response'          =>  'required'
-							   ]
-						   ,
-							   [
-								   'g-recaptcha-response.required' =>  'Please verify you are not a robot!'
-							   ]
-					   );
-
 	   $token = $request->input('g-recaptcha-response');
-
-	   if($token)
-	   {
-
-		   $client = new Client();
-		   $response = $client->post('https://www.google.com/recaptcha/api/siteverify',
-									   [
-										   'form_params'=>
-														   ['secret'=>'6LeaXDgUAAAAAEYDY2ZLPp-3Z8O516bHq3TzQeQs',
-															'response'=> $token
-														   ]
-									   ]
-								   );
-
-		   $result = json_decode($response->getBody()->getContents());
+	   if($token) {
+		   $result = $this->checkRecaptcha($token);
 		   if ($result->success) {
-               $partsNames    = $request->input('parts_names');
-			   $name         = $request->input('name');
-			   $phoneNumber  = $request->input('phone_number');
-			   $email        = $request->input('email');
-			   $message      = $request->input('message');
-
-
-			  \Mail::to('j.sameh@infomed-me.com')->send( new PartsAndMaintenanceEmail($partsNames, $name, $phoneNumber, $email, $message));
-			   flash()->success('The EMail has been sent!');
+			   $this->sendMail('j.sameh@infomed-me.com', $request);
+			   flash()->success('The mail has been sent and your request are in progress!');
 			   return redirect()->action('PartsAndMaintenanceController@getPartsAndMaintenance');
-
 		   }else {
 			   flash()->error('Please verify you are not a robot!');
 			   return redirect()
@@ -79,10 +43,47 @@ class PartsAndMaintenanceController extends Controller
                         ->withErrors(['Please verify you are not a robot!'])
                         ->withInputs();
 		   }
-	   }else
-	   {
+	   }else {
 		   flash()->error('Please verify you are not a robot!');
 		   return redirect()->action('StaticPagesController@getContactUsPage');
 	   }
+	}
+
+	private function checkRecaptcha($token)
+	{
+		$client = new Client();
+		$response = $client->post('https://www.google.com/recaptcha/api/siteverify',
+									[
+										'form_params'=>
+														['secret'=>'6LeaXDgUAAAAAEYDY2ZLPp-3Z8O516bHq3TzQeQs',
+														 'response'=> $token
+														]
+									]
+								);
+		$result = json_decode($response->getBody()->getContents());
+		return $result;
+	}
+
+	private function sendMail($to, PartsAndMaintenanceRequest $request)
+	{
+		$partsNames  = $request->input('parts_names');
+		$name        = $request->input('name');
+		$phoneNumber = $request->input('phone_number');
+		$email       = $request->input('email');
+		$companyName = $request->input('company');
+		$city		= $request->input('city');
+		$area		= $request->input('area');
+		$modelCode	= $request->input('model_code');
+		$message		= $request->input('message');
+	   return \Mail::to($to)->send( new PartsAndMaintenanceEmail(
+												$partsNames,
+												$name,
+												$phoneNumber,
+												$email,
+												$companyName,
+												$city,
+												$area,
+												$modelCode,
+												$message));
 	}
 }

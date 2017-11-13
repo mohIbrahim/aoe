@@ -1,24 +1,22 @@
 @component('mail::message')
-# Name:
-{{$name}}
-# Parts names:
+## Customer Name: {{$name}}.
 
-@foreach($partsNames as $partName)
-    ## {{$partName}}
+## Required spare parts
+| #          | Part Name            |
+|:----------:|:--------------------:|
+@foreach($partsNames as $key=> $partName)
+| {{$key+1}} | {{$partName}}        |
 @endforeach
+## Model Code of the machine: {{$modelCode}}.
 
-    # Phone:
-    {{$phoneNumber}}
+## Customer Phone Number: {{$phoneNumber}}
 
-    # Email:
-    {{$email}}
+## Customer Email: {{$email}}
+## City: {{$city}}
+## Area: {{$area}}
+## Message:
+{{$message}}
 
-    # Message:
-    {{$message}}
-
-@component('mail::button', ['url' => ''])
-Button Text
-@endcomponent
 
 Thanks,<br>
 {{ config('app.name') }}

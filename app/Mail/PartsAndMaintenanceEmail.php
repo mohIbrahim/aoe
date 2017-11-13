@@ -10,18 +10,22 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class PartsAndMaintenanceEmail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $partsNames, $name, $phoneNumber, $email, $message;
+    public $partsNames, $name, $phoneNumber, $email, $companyName, $city, $area, $modelCode, $message;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($partsName, $name, $phoneNumber, $email, $message)
+    public function __construct($partsName, $name, $phoneNumber, $email, $companyName, $city, $area, $modelCode, $message)
     {
         $this->partsNames   = $partsName;
         $this->name         = $name;
         $this->phoneNumber  = $phoneNumber;
         $this->email        = $email;
+		$this->companyName	= $companyName;
+		$this->city			= $city;
+		$this->area 		= $area;
+		$this->modelCode 	= $modelCode;
         $this->message      = $message;
     }
 

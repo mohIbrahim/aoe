@@ -150,8 +150,8 @@
 			                </div>
 			                <div class="clearfix"></div>
 							<div class="form-group" style="margin: 5px auto; width:90%">
-								{!!Form::label('part_name', 'Pick this part')!!}
-								{!!Form::checkbox('part_name', 'laser_unit')!!}
+								{!!Form::label('parts_names', 'Pick this part')!!}
+								{!!Form::checkbox('parts_names[]', 'laser_unit')!!}
 								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
 							</div>
 			            </div>
@@ -172,8 +172,8 @@
 			                </div>
 			                <div class="clearfix"></div>
 							<div class="form-group" style="margin: 5px auto; width:90%">
-								{!!Form::label('part_name', 'Pick this part')!!}
-								{!!Form::checkbox('part_name', 'drum')!!}
+								{!!Form::label('parts_names', 'Pick this part')!!}
+								{!!Form::checkbox('parts_names[]', 'drum')!!}
 								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
 							</div>
 			            </div>
@@ -199,8 +199,8 @@
 			                </div>
 			                <div class="clearfix"></div>
 							<div class="form-group" style="margin: 5px auto; width:90%">
-								{!!Form::label('part_name', 'Pick this part')!!}
-								{!!Form::checkbox('part_name', 'pf_roller')!!}
+								{!!Form::label('parts_names', 'Pick this part')!!}
+								{!!Form::checkbox('parts_names[]', 'pf_roller')!!}
 								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
 							</div>
 			            </div>
@@ -221,11 +221,11 @@
 			                </div>
 			                <div class="clearfix"></div>
 							<div class="form-group" style="margin: 5px auto; width:90%">
-								{!!Form::label('part_name', 'Pick this part')!!}
-								{!!Form::checkbox('part_name', 'ps_and_rubber')!!}
+								{!!Form::label('parts_names', 'Pick this part')!!}
+								{!!Form::checkbox('parts_names[]', 'ps_and_rubber')!!}
 								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
 							</div>
-			            </div>``
+			            </div>
 		        	</div>
 
 		        	<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-3">
@@ -242,6 +242,11 @@
 			                	</div>
 			                </div>
 			                <div class="clearfix"></div>
+							<div class="form-group" style="margin: 5px auto; width:90%">
+								{!!Form::label('parts_names', 'Pick this part')!!}
+								{!!Form::checkbox('parts_names[]', 'gears')!!}
+								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
+							</div>
 			            </div>
 		        	</div>
 
@@ -259,6 +264,11 @@
 			                	</div>
 			                </div>
 			                <div class="clearfix"></div>
+							<div class="form-group" style="margin: 5px auto; width:90%">
+								{!!Form::label('parts_names', 'Pick this part')!!}
+								{!!Form::checkbox('parts_names[]', 'toner')!!}
+								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
+							</div>
 			            </div>
 		        	</div>
 
@@ -281,6 +291,11 @@
 			                	</div>
 			                </div>
 			                <div class="clearfix"></div>
+							<div class="form-group" style="margin: 5px auto; width:90%">
+								{!!Form::label('parts_names', 'Pick this part')!!}
+								{!!Form::checkbox('parts_names[]', 'color_toner')!!}
+								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
+							</div>
 			            </div>
 		        	</div>
 
@@ -298,6 +313,11 @@
 			                	</div>
 			                </div>
 			                <div class="clearfix"></div>
+							<div class="form-group" style="margin: 5px auto; width:90%">
+								{!!Form::label('parts_names', 'Pick this part')!!}
+								{!!Form::checkbox('parts_names[]', 'developer')!!}
+								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
+							</div>
 			            </div>
 		        	</div>
 
@@ -315,6 +335,11 @@
 			                	</div>
 			                </div>
 			                <div class="clearfix"></div>
+							<div class="form-group" style="margin: 5px auto; width:90%">
+								{!!Form::label('parts_names', 'Pick this part')!!}
+								{!!Form::checkbox('parts_names[]', 'toner_cartridge')!!}
+								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
+							</div>
 			            </div>
 		        	</div>
 
@@ -332,6 +357,11 @@
 			                	</div>
 			                </div>
 			                <div class="clearfix"></div>
+							<div class="form-group" style="margin: 5px auto; width:90%">
+								{!!Form::label('parts_names', 'Pick this part')!!}
+								{!!Form::checkbox('parts_names[]', 'belt')!!}
+								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
+							</div>
 			            </div>
 		        	</div>
 
@@ -349,6 +379,11 @@
 			                	</div>
 			                </div>
 			                <div class="clearfix"></div>
+							<div class="form-group" style="margin: 5px auto; width:90%">
+								{!!Form::label('parts_names', 'Pick this part')!!}
+								{!!Form::checkbox('parts_names[]', 'dram_blade')!!}
+								{!!Form::submit('Make Order', ['class'=>'btn btn-primary btn-xs pull-right'])  !!}
+							</div>
 			            </div>
 		        	</div>
 
