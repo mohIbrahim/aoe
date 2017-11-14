@@ -6,11 +6,20 @@ namespace App\AOE;
  */
 trait Language
 {
-	function isArabic()
+	public function isArabic()
 	{
-		if(session()->has('locale') && session('locale') == 'ar')
+		if (session()->has('locale') && session('locale') == 'ar')
 			return true;
 		else
 			return false;
 	}
+
+	public function isEnglish()
+	{
+		if (session()->has('locale') && session('local') == 'en')
+			return true;
+		else
+			return false;
+	}
+
 }

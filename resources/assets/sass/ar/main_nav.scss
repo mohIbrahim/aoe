@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Changa');
+@import url('https://fonts.googleapis.com/css?family=Cairo');
 
 
 #language_container{
@@ -20,7 +20,7 @@
 .language_nav a{
     font-size: 1em;
     text-decoration: none;
-    font-family: 'Changa', sans-serif;
+    font-family: 'Cairo', sans-serif;
     font-weight:bold;
     color: #000000;
 }
@@ -28,7 +28,7 @@
     color: #E51E25;
 }
 .language_nav a:last-child{
-    font-family: 'Changa', sans-serif;
+    font-family: 'Cairo', sans-serif;
 }
 .navbar{
 	min-height: 95px;
@@ -46,7 +46,8 @@
 }
 .navbar-collapse{
 	margin-top:35px;
-	font-family: 'Changa', sans-serif;
+	font-family: 'Cairo', sans-serif;
+	font-weight:bold;
 }
 .nav.navbar-nav li a {
 	color: #3F52A3;
@@ -57,7 +58,7 @@
 }
 .navbar-toggle{
   margin-top:30px;
-  font-family: 'Changa', sans-serif;
+  font-family: 'Cairo', sans-serif;
   color: #3F52A3;
   border-color: #3F52A3!important;
 }

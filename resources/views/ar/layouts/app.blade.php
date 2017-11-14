@@ -15,7 +15,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-rtl/bootstrap-rtl.min.css')}}">
-	<link href="{{ asset('css/ar/app.css') }}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/ar/app.css') }}">
 
     @yield('head')
 </head>

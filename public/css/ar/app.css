@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Changa);#language_container {
+@import url(https://fonts.googleapis.com/css?family=Cairo);#language_container {
   background-color: #fff;
   padding: 0;
 }
@@ -17,7 +17,7 @@
 .language_nav a {
   font-size: 1em;
   text-decoration: none;
-  font-family: 'Changa', sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-weight: bold;
   color: #000000;
 }
@@ -27,7 +27,7 @@
 }
 
 .language_nav a:last-child {
-  font-family: 'Changa', sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 .navbar {
@@ -49,7 +49,8 @@
 
 .navbar-collapse {
   margin-top: 35px;
-  font-family: 'Changa', sans-serif;
+  font-family: 'Cairo', sans-serif;
+  font-weight: bold;
 }
 
 .nav.navbar-nav li a {
@@ -63,7 +64,7 @@
 
 .navbar-toggle {
   margin-top: 30px;
-  font-family: 'Changa', sans-serif;
+  font-family: 'Cairo', sans-serif;
   color: #3F52A3;
   border-color: #3F52A3 !important;
 }
@@ -199,13 +200,13 @@
   border-top: 2px solid #282C72;
 }
 
-span {
+footer span {
   display: block;
   margin-top: 0px;
 }
 
 .footer-nav-ul-1 {
-  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .footer-nav-ul-1 li {
@@ -294,5 +295,26 @@ footer .active a:focus {
   list-style-type: none;
   position: relative;
   top: -10px;
+}
+
+#wrapper {
+  font-family: 'Changa', sans-serif;
+}
+
+#contact-us-btn {
+  font-family: 'Cairo', sans-serif;
+  margin-top: 40px;
+  max-width: 200px;
+}
+
+#container-two {
+  font-family: 'Cairo', sans-serif;
+  font-weight: bold;
+  margin-top: 25px;
+  color: #282C72;
+}
+
+.welcome-page ul li {
+  list-style-type: square;
 }
 

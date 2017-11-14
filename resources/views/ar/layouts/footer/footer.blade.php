@@ -11,55 +11,56 @@
 					<div class="col-xs-8 col-xs-offset-4		col-sm-4 col-sm-offset-0		col-md-2 col-md-offset-0		col-lg-2 col-lg-offset-0">
 						<ul class="footer-nav-ul-1">
 							<li class="{{ Request::routeIs('welcome')? " active":"" }}">
-								<a href="{{action('WelcomeController@getWelcome')}}" class="footer-nav-a">Home</a>
+								<a href="{{action('WelcomeController@getWelcome')}}" class="footer-nav-a">الرئيسية</a>
 							</li>
 							<li class="{{ Request::routeIs('parts_and_maintenance')? "active":"" }}">
-								<a href="{{action('PartsAndMaintenanceController@getPartsAndMaintenance')}}" class="footer-nav-a">Parts And Maintenance</a>
+								<a href="{{action('PartsAndMaintenanceController@getPartsAndMaintenance')}}" class="footer-nav-a"> قطع الغيار والصيانة </a>
 							</li>
 							<li class="{{ Request::routeIs('contact_us')? "active":"" }}">
-								<a href="{{action('ContactUsController@getContactUs')}}" class="footer-nav-a">Contact Us</a>
+								<a href="{{action('ContactUsController@getContactUs')}}" class="footer-nav-a"> إتصل بنا </a>
 							</li>
 						</ul>
 					</div>
 
 					<div class="col-xs-8 col-xs-offset-4		col-sm-3 col-sm-offset-0     col-md-2 col-md-offset-0      col-lg-2 col-lg-offset-0">
-						<span class="footer-nav-a">Products</span>
-						<span class="footer-nav-multicolor">Multicolor</span>
+						<span class="footer-nav-a">المنتجات</span>
+						<span class="footer-nav-multicolor"> طابعات متعددة الألوان</span>
 						<ul class="footer-nav-ul">
 							<li class="{{ Request::routeIs('Multicolor_2025_PPM')? "active":"" }}">
-	                            <a href="{{action('ProductsController@getMulticolor2025')}}">20~25 PPM</a>
+	                            <a href="{{action('ProductsController@getMulticolor2025')}}">20~25  ورقة بالدقيقة</a>
 	                        </li>
 	                        <li class="{{ Request::routeIs('Multicolor_2630_PPM')? "active":"" }}">
-	                            <a href="{{action('ProductsController@getMulticolor2630')}}">26~30 PPM</a>
+	                            <a href="{{action('ProductsController@getMulticolor2630')}}">26~30  ورقة بالدقيق</a>
 	                        </li>
 	                        <li class="{{ Request::routeIs('Multicolor_3140_PPM')? "active":"" }}">
-	                            <a href="{{action('ProductsController@getMulticolor3140')}}">31~40 PPM</a>
+	                            <a href="{{action('ProductsController@getMulticolor3140')}}">31~40  ورقة بالدقيق</a>
 	                        </li>
 	                        <li class="{{ Request::routeIs('Multicolor_41_plus_PPM')? "active":"" }}">
-	                            <a href="{{action('ProductsController@getMulticolor41Plus')}}">41+ PPM</a>
+	                            <a href="{{action('ProductsController@getMulticolor41Plus')}}">41+  ورقة بالدقيق</a>
 	                        </li>
 						</ul>
 
 
-						<span class="footer-nav-monochrome">Monochrome</span>
+						<span class="footer-nav-monochrome">طابعات أحادية اللون</span>
 						<ul class="footer-nav-ul">
 							<li class="{{ Request::routeIs('Monochrome_2025_PPM')? "active":"" }}">
-	                            <a href="{{action('ProductsController@getMonochrome2025')}}">20~25 PPM</a>
+	                            <a href="{{action('ProductsController@getMonochrome2025')}}"> 20~25 ورقة </a>
 	                        </li>
 	                        <li class="{{ Request::routeIs('Monochrome_2630_PPM')? "active":"" }}">
-	                            <a href="{{action('ProductsController@getMonochrome2630')}}">26~30 PPM</a>
+	                            <a href="{{action('ProductsController@getMonochrome2630')}}"> 26~30 ورقة بالدقيقة </a>
 	                        </li>
 	                        <li class="{{ Request::routeIs('Monochrome_3140_PPM')? "active":"" }}">
-	                            <a href="{{action('ProductsController@getMonochrome3140')}}">31~40 PPM</a>
+	                            <a href="{{action('ProductsController@getMonochrome3140')}}"> 31~40 ورقة بالدقيقة </a>
 	                        </li>
 	                        <li class="{{ Request::routeIs('Monochrome_41_plus_PPM')? "active":"" }}">
-	                            <a href="{{action('ProductsController@getMonochrome41Plus')}}">41+ PPM</a>
+	                            <a href="{{action('ProductsController@getMonochrome41Plus')}}"> 41+ ورقة بالدقيقة </a>
 	                        </li>
 						</ul>
 
 						<ul class="footer-nav-ul-1">
 							<li class="{{ Request::routeIs('HV_Production_MFP')? "active":"" }}" >
-								<a href="{{action('ProductsController@getHvProductionMfp')}}"  id="footer-hv-production">HV Production MFP</a>
+								<a href="{{action('ProductsController@getHvProductionMfp')}}"  id="footer-hv-production"> طابعات متعددة الوظائف<br>
+	 ذو حجم إنتاج مرتفع </a>
 							</li>
 						</ul>
 
@@ -69,7 +70,7 @@
 					<div class="col-xs-8 col-xs-offset-4		col-sm-2 col-sm-offset-0     col-md-2 col-md-offset-0      col-lg-2 col-lg-offset-0">
 						<ul class="footer-nav-ul-1">
 							<li class="{{ Request::routeIs('solutions')? "active":"" }}">
-								<a href="{{action('SolutionsController@getSolutions')}}" class="footer-nav-a">Solutions</a>
+								<a href="{{action('SolutionsController@getSolutions')}}" class="footer-nav-a"> الحلول المكتبية </a>
 							</li>
 						</ul>
 					</div>

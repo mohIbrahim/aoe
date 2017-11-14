@@ -1,6 +1,6 @@
 @extends('ar.layouts.app')
 @section('title')
-	Welcome | AOE
+	مرحبــاً | الشركة العربية لمهمات المكاتب
 @endsection
 @section('content')
 {{-- carousel  --}}
@@ -42,99 +42,110 @@
 
 </div> --}}
 {{-- End carousel  --}}
+	<div id="wrapper">
 
-	<div class="container" style="margin-top: 25px">
-		<img src="{{asset('images/welcome-page/3a98ea_fa96ba23431244c69d0142659f857262.png')}}" class="img-responsive" alt="Image" style="margin:0 auto">
+		<div class="container" style="margin-top: 25px">
+			<img src="{{asset('images/welcome-page/3a98ea_fa96ba23431244c69d0142659f857262.png')}}" class="img-responsive" alt="Image" style="margin:0 auto">
 
 
-		<a class="btn btn-primary btn-lg center-block" href="{{ action('ContactUsController@getContactUs') }}" role="button" style="margin-top:40px;font-family: 'Yantramanav', sans-serif; max-width: 200px">
-			CONTACT AOE TODAY!
-		</a>
-	</div>
-	<div class="container" style="margin-top: 25px; color: #282C72;font-family: 'Yantramanav', sans-serif;">
-		<div class="row">
-			<div class="col-xs-8 col-xs-offset-2		col-sm-8 col-sm-offset-2		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-1 ">
-				<img src="{{asset('images/welcome-page/about_us.png')}}" class="img-responsive" alt="Image">
-			</div>
-			<div class="col-xs-10 col-xs-offset-1		col-sm-12 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-0">
-				<h3>
-					ABOUT US
-				</h3>
-				<div class="">
-					<p>
-						Arabian Office Equipments Co is the authorised retailers for all SHARP MFPs in Egypt.
-					</p>
-					<p>
-						AOE is a well established reputable company that has been providing office equipments solutions to the public and private sector since the 70s.
-					</p>
-					<p>
-						Explore our website for products that will help make your office more efficient and easier to connect.
-					</p>
+			<a class="btn btn-primary btn-lg center-block" href="{{ action('ContactUsController@getContactUs') }}" role="button" id="contact-us-btn">
+				إتصل بنا اليوم!
+			</a>
+		</div>
+		<div id="container-two" class="container">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2		col-sm-8 col-sm-offset-2		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-1 ">
+					<img src="{{asset('images/welcome-page/about_us.png')}}" class="img-responsive" alt="Image">
+				</div>
+				<div class="col-xs-10 col-xs-offset-1		col-sm-12 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-0">
+					<h3>
+						 من نحنُ
+					</h3>
+					<div class="">
+						<p>
+							الشركة العربية لمهمات المكاتب تعتبر الوكيل الوحيد والحصري لماكينات طباعة شركة
+<span style="color:red; display:inline">	   شــارب</span>
+	 في جمهورية مصر العربية.
+						</p>
+						<p>
+							شركة العربية هي شركة ذات سمعة طيبة، وقد تم توفير حلول المعدات المكتبية للقطاعين العام والخاص منذ سبعنيات القرن الماضي.
+
+
+						</p>
+						<p>
+							استكشف موقعنا الالكتروني لإيجاد المنتجات التى من شأنها أن تساعدك كي تجعل مكتبك أكثر كفاءة وأسهل في الإتصال
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<div class="col-xs-10 col-xs-offset-1		hidden-sm		hidden-md		hidden-lg">
-				<img src="{{asset('images/welcome-page/our_vision.png')}}" class="img-responsive" alt="Image">
-			</div>
+			<hr>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1		hidden-sm		hidden-md		hidden-lg">
+					<img src="{{asset('images/welcome-page/our_vision.png')}}" class="img-responsive" alt="Image">
+				</div>
 
-			<div class="col-xs-10 col-xs-offset-1		col-sm-6 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-4 col-lg-offset-1">
-				<h3>
-					OUR VISION
-				</h3>
-				<div class="">
-					<p>
-						To stay a market leading company in providing office equipments solutions to the egyptian market.
-					</p>
+				<div class="col-xs-10 col-xs-offset-1		col-sm-6 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-4 col-lg-offset-1">
+					<h3>
+						رؤيتنا
+					</h3>
+					<div class="">
+						<p>
+							إبقاء الشركة رائدة تسويقياً في توفير حلول المعدات المكتبية للسوق المصرية.
+						</p>
+					</div>
+				</div>
+
+				<div class="hidden-xs		col-sm-6 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-1">
+					<img src="{{asset('images/welcome-page/our_vision.png')}}" class="img-responsive" alt="Image">
 				</div>
 			</div>
+			<hr>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1		col-sm-8 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-1 ">
+					<img src="{{asset('images/welcome-page/solutions.png')}}" class="img-responsive" alt="Image">
+				</div>
 
-			<div class="hidden-xs		col-sm-6 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-1">
-				<img src="{{asset('images/welcome-page/our_vision.png')}}" class="img-responsive" alt="Image">
-			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<div class="col-xs-10 col-xs-offset-1		col-sm-8 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-1 ">
-				<img src="{{asset('images/welcome-page/solutions.png')}}" class="img-responsive" alt="Image">
-			</div>
+				<div class="col-xs-8 col-xs-offset-2		col-sm-4 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-0">
+					<h3>
+						الحلول المكتبية
 
-			<div class="col-xs-8 col-xs-offset-2		col-sm-4 col-sm-offset-0		col-md-6 col-md-offset-0		col-lg-5 col-lg-offset-0">
-				<h3>
-					SOLUTIONS
-				</h3>
-				<div class="welcome-page">
-					<ul>
-						<li>
-							Usability
-						</li>
+					</h3>
+					<div class="welcome-page">
+						<ul>
+							<li>
+								سهولة الاستخدام
+							</li>
 
-						<li>
-							Sharp OSA
-						</li>
+							<li>
+								بنية الأنظمة المفتوحة من شارب
 
-						<li>
-							Eco-Friendliness
-						</li>
+							</li>
 
-						<li>
-							Device Management
-						</li>
+							<li>
+								أنظمة صديقة للبيئة
 
-						<li>
-							Security
-						</li>
+							</li>
 
-						<li>
-							Document Management
-						</li>
+							<li>
+								التحكم وإدارة التشغيل
+							</li>
 
-						<li>
-							Expandability
-						</li>
-					</ul>
-					<a class="btn btn-primary btn-sm pull-left" href="{{action('SolutionsController@getSolutions')}}" role="button">Learn More</a>
+							<li>
+								تأمين البيانات
+
+							</li>
+
+							<li>
+								إدارة الملفات
+
+							</li>
+
+							<li>
+								التطوير والتوسعة
+							</li>
+						</ul>
+						<a class="btn btn-primary btn-sm pull-left" href="{{action('SolutionsController@getSolutions')}}" role="button">أعرف أكثر</a>
+					</div>
 				</div>
 			</div>
 		</div>
