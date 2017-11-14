@@ -193,6 +193,7 @@
 }
 
 #footer-container {
+  font-family: 'Cairo', sans-serif;
   background: #fff;
   margin-top: 100px;
   padding-top: 15px;
@@ -215,7 +216,7 @@ footer span {
 }
 
 .footer-nav-a {
-  font-family: 'Yantramanav', sans-serif;
+  font-family: 'Cairo', sans-serif;
   color: #282C72;
   font-size: 1.2em !important;
   list-style-type: none;
@@ -228,10 +229,14 @@ footer span {
 }
 
 .footer-nav-ul {
-  padding-left: 20px;
+  padding-right: 20px;
   color: #282C72;
-  font-family: 'Yantramanav', sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-size: 0.7em;
+}
+
+.footer-nav-ul li {
+  padding-top: 5px;
 }
 
 .footer-nav-ul li a {
@@ -241,7 +246,7 @@ footer span {
 
 @media only screen and (max-width: 992px) {
   #footer-container > div > span > div.col-xs-8.col-xs-offset-2.col-sm-4.col-sm-offset-5.col-md-1.col-md-offset-0.col-lg-1.col-lg-offset-0 {
-    border-left: none !important;
+    border-right: none !important;
   }
 }
 
@@ -272,7 +277,7 @@ footer .active a:focus {
   -o-border-image: url("/images/footer/footer-multi-color-decoration.png") 2 stretch;
      border-image: url("/images/footer/footer-multi-color-decoration.png") 2 stretch;
   padding: 0px;
-  padding-left: 10px;
+  padding-right: 10px;
   color: #282C72;
   background: #fff3f3;
 }
@@ -281,15 +286,15 @@ footer .active a:focus {
   font-size: .9em;
   border-bottom: 1px solid #282C72;
   padding: 0px;
-  padding-left: 10px;
+  padding-right: 10px;
   color: #282C72;
   background: #f4f5ff;
 }
 
 #footer-hv-production {
-  font-family: 'Yantramanav', sans-serif;
+  font-family: 'Cairo', sans-serif;
   text-decoration: none;
-  padding-left: 10px;
+  padding-right: 10px;
   color: #282C72;
   font-size: 0.9em !important;
   list-style-type: none;

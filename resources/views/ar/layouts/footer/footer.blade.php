@@ -75,16 +75,16 @@
 						</ul>
 					</div>
 
-					<div class="col-xs-8 col-xs-offset-2		col-sm-4 col-sm-offset-5    col-md-1 col-md-offset-0      col-lg-1 col-lg-offset-0" style="font-size: 1em;border-left: 2px solid #282C72">
+					<div class="col-xs-8 col-xs-offset-2		col-sm-4 col-sm-offset-5    col-md-1 col-md-offset-0      col-lg-1 col-lg-offset-0" style="font-size: 1em;border-right: 2px solid #282C72">
 
 		                <span class="text-center">
-	                        <a href="https://www.facebook.com/aoeegypt" class="navbar-link fa fa-facebook"  style="margin-right: 5px" target="_blank">
+	                        <a href="https://www.facebook.com/aoeegypt" class="navbar-link fa fa-facebook"  style="margin-left: 5px" target="_blank">
 	                            <span style="font-size: .3em;font-weight:bold">
 	                                Facebook
 	                            </span>
 	                        </a>
 
-	                        <a href="#" class="navbar-link fa fa-twitter" style="margin-right: 5px">
+	                        <a href="#" class="navbar-link fa fa-twitter" style="margin-left: 5px">
 	                            <span style="font-size: .3em;font-weight:bold">
 	                                Twitter
 	                            </span>
